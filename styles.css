@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content {
+    flex: 1;
+  }
+
+  .footer {
+    background-color: #f2f2f2; /* Gray background */
+    color: #333; /* Dark text */
+    position: fixed;
+    bottom: 40px; /* Height of the black copyright box */
+    width: 100%;
+    overflow-x: auto;
+    padding: 20px 0;
+  }
+  
+  .footer-inner {
+    min-width: 1520px; /* This is the minimum width the footer will have */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 50px;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section ul, .footer-section form {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li a, .footer-section form input, .footer-section form button {
+    color: #333;
+    text-decoration: none;
+    line-height: 1.6;
+    border: none;
+    background: none;
+    padding: 8px;
+    margin: 2px 0;
+    vertical-align: top;
+  }
+  
+  .footer-section form button {
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  .footer-section form input {
+    color: #333;
+  }
+  
+  .footer-bottom {
+    color: black;
+    position: fixed;
+    bottom: 0;
+    width: 1500px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+  }
+  
+  .footer-bottom .copy {
+    text-align: left;
+  }
+  
+  .footer-bottom .payment-logos img {
+    height: 20px; /* Adjust as necessary for your logos */
+    margin-left: 10px;
+  }
+
+  .social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px; /* Space between icons */
+  text-decoration: none; /* Removes underline from links */
+}
+
+.social-icons img {
+  height: 30px; /* Adjust the size as needed */
+}
+
+.subscribe-container {
+  background-color: #f2f2f2; /* Background color */
+  padding: 20px; /* Padding around the content */
+  width: 300px; /* Width of the subscribe container */
+  box-sizing: border-box; /* Ensures padding doesn't add to the width */
+  border-radius: 5px; /* Rounded corners of the container */
+}
+
+.subscribe-container h2 {
+  text-align: left;
+  font-size: 1.2em; /* Size of the title */
+  margin-bottom: 5px; /* Space between title and paragraph */
+}
+
+.subscribe-container p {
+  font-size: 0.9em; /* Size of the paragraph */
+  margin-bottom: 20px; /* Space between paragraph and form */
+}
+
+.subscribe-form {
+  display: flex;
+}
+
+.subscribe-form input[type="email"] {
+  flex-grow: 1; /* Allows input to fill the space */
+  padding: 10px;
+  border: none; /* No border for input */
+  margin-right: -1px; /* Overlap border with button */
+}
+
+.subscribe-form button {
+  background-color: #000; /* Background color for the button */
+  color: #fff; /* Text color for the button */
+  border: none; /* No border for button */
+  padding: 10px 20px;
+  cursor: pointer; /* Changes cursor to pointer */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the right side */
+}
+
+/* Additional styles for focus and hover states */
+.subscribe-form input[type="email"]:focus, .subscribe-form button:hover {
+  outline: none; /* Removes outline on focus */
+  background-color: #333; /* Background color on hover for button */
+}
+
