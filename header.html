@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Header</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .header-background {
+      width: 1500; /* Adjust as per the actual width of the header */
+      height: 70px; /* Adjust as per the actual height of the header */
+      background-color: lightgray; /* Match the background color */
+    }
+    .header {
+      width: 500; /* Adjust as per the actual width of the header */
+      height: 70px; /* Adjust as per the actual height of the header */
+      background-color: lightgray; /* Match the background color */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 20px; /* Add padding on the sides */
+    }
+
+    .logo {
+      font-size: 24px; /* Adjust the size as needed */
+      font-weight: bold;
+    }
+
+    .search-bar input {
+      width: 500px; /* Adjust the width as needed */
+      padding: 10px;
+      margin: 0 150px;
+      border-radius: 1px;
+      border-color: black;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .user-info .user-icon,
+    .user-info .language {
+      margin-left: 20px; /* Space between user and language */
+    }
+
+    .user-info .language {
+      border-left: 1px solid black; /* Separator line */
+      padding-left: 20px;
+    }
+
+    /* Remove default styles */
+    .search-bar input {
+      border: none;
+      outline: none;
+      background: transparent;
+      border: 1px solid black;
+      color: wheat;
+    }
+
+    Add interactivity .search-bar input:focus {
+      border: 1px solid #ccc;
+    }
+
+    /* Style the cursor */
+    .search-bar input {
+      caret-color: white;
+    }
+
+    .navbar-background {
+      width: 1535px; /* Adjust as per the actual width of the navigation bar */
+      height: 40px; /* Adjust as per the actual height of the navigation bar */
+      background-color: #f1f1f1; /* Match the background color */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-top: 2px;
+    }
+
+    .navbar {
+      width: 1100px; /* Adjust as per the actual width of the navigation bar */
+      height: 40px; /* Adjust as per the actual height of the navigation bar */
+      background-color: #f1f1f1; /* Match the background color */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 20px; /* Add padding on the sides */
+      margin: auto;
+      text-align: center;
+    }
+
+    .menu-item {
+      font-size: 10px; /* Adjust the size as needed */
+      color: #000;
+      padding: 10px 15px; /* Adjust the padding as needed */
+      cursor: pointer;
+    }
+
+    .menu-item.special {
+      font-weight: bold;
+      background-color: #000;
+      color: #fff;
+      height: inherit;
+      width: auto;
+      white-space: nowrap;
+      display: flex;
+      align-items: center; /* Center vertically */
+      justify-content: center; /* Center horizontally */
+      margin-left: auto; /* Pushes the special item to the right */
+    }
+
+    .menu-item:not(.special):hover {
+      background-color: #ddd; /* Hover effect for non-special items */
+    }
+
+    /* Ensure that the dropdown arrow is aligned with the text */
+    .menu-item::after {
+      content: "";
+      display: inline-block;
+      margin-left: 5px;
+    }
+
+    /* Reset list styles */
+    .navbar {
+      list-style: none;
+    }
+
+    /* Inline-block for horizontal layout */
+    .navbar .menu-item {
+      display: inline-block;
+    }
+  </style>
+  <body>
+    <div class="header-background">
+      <div class="header">
+        <div class="logo">YOUR LOGO</div>
+        <div class="search-bar">
+          <input type="text" placeholder="Type in and hit Enter" />
+        </div>
+        <div class="user-info">
+          <span class="user-icon">User</span>
+          <span class="language">ENG</span>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-background">
+      <div class="navbar">
+        <div class="menu-item">ALL CATEGORIES</div>
+        <div class="menu-item">MOBILE PHONES & GADGETS</div>
+        <div class="menu-item">BEAUTY & PERSONAL CARE</div>
+        <div class="menu-item">COMPUTER & TECH</div>
+        <div class="menu-item">PHOTOGRAPHY</div>
+        <div class="menu-item">MOTORBIKES</div>
+        <div class="menu-item">CARS</div>
+        <div class="menu-item">HOBBIES & TOYS</div>
+        <div class="menu-item">TV & HOME APPLIANCES</div>
+        <div class="menu-item special">SELL WITH US</div>
+      </div>
+    </div>
+  </body>
+</html>
