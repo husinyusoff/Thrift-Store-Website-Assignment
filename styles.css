@@ -63,7 +63,7 @@ html {
   outline: none;
   background: transparent;
   border: 1px solid black;
-  color: wheat;
+  color: black;
 }
 
 Add interactivity .search-bar input:focus {
@@ -72,7 +72,7 @@ Add interactivity .search-bar input:focus {
 
 /* Style the cursor */
 .search-bar input {
-  caret-color: white;
+  caret-color: gray;
 }
 
 .sticky {
@@ -113,11 +113,52 @@ Add interactivity .search-bar input:focus {
   text-align: center;
 }
 
+/* Dropdown Styles */
+.dropdown {
+  position: relative; /* Position the dropdown relative to its parent */
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  left: 0; /* Align to the left edge of the parent menu item */
+  top: 42px; /* Adjust this value to match the height of your navbar */
+  min-width: 160px; /* Adjust this value to match the width of the menu item if necessary */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left; /* Align text to the left */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
 .menu-item {
   font-size: 10px; /* Adjust the size as needed */
   color: #000;
-  padding: 10px 15px; /* Adjust the padding as needed */
+  padding: 10px 12px; /* Adjust the padding as needed */
   cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+/* Align 'ALL CATEGORIES' text to the cente */
+.menu-item.dropdown {
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin-left: auto; /* Pushes the special item to the right */
 }
 
 .menu-item.special {
