@@ -7,6 +7,7 @@ html {
   font-family: Arial, sans-serif;
 }
 
+
 /* Adjust padding-top for the content */
 .content {
   padding-top: 110px; /* Adjust this value based on the total height of the header and navigation bar */
@@ -35,7 +36,7 @@ html {
 }
 
 .search-bar input {
-  width: 500px; /* Adjust the width as needed */
+  width: 460px; /* Adjust the width as needed */
   padding: 10px;
   margin: 0 150px;
   border-radius: 1px;
@@ -45,6 +46,8 @@ html {
 .user-info {
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 15;
 }
 
 .user-info .user-icon,
@@ -87,9 +90,9 @@ Add interactivity .search-bar input:focus {
 
 .header-background,
 .navbar-background {
-  position: fixed; /* Fixed position at the top */
+  position: fixed;
   top: 0; /* Align at the top */
-  z-index: 10; /* Ensure it stays above other content */
+  z-index: 20; /* Ensure it stays above other content */
 }
 
 /* NAVIGATION BAR */
@@ -99,6 +102,7 @@ Add interactivity .search-bar input:focus {
   height: 40px; /* Adjust as per the actual height of the navigation bar */
   background-color: #f1f1f1; /* Match the background color */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 5; /* Ensure it stays above other content */
 }
 
 .navbar {
@@ -111,6 +115,7 @@ Add interactivity .search-bar input:focus {
   padding: 20px 20px; /* Add padding on the sides */
   margin: auto;
   text-align: center;
+  z-index: 5; /* Ensure it stays above other content */
 }
 
 /* Dropdown Styles */
@@ -163,7 +168,7 @@ Add interactivity .search-bar input:focus {
 
 .menu-item.special {
   font-weight: bold;
-  background-color: #000;
+  background-color: red;
   color: #fff;
   height: inherit;
   width: auto;
@@ -172,6 +177,7 @@ Add interactivity .search-bar input:focus {
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
   margin-left: auto; /* Pushes the special item to the right */
+  padding-top: 15px;
 }
 
 .menu-item:not(.special):hover {
@@ -195,6 +201,75 @@ Add interactivity .search-bar input:focus {
   display: inline-block;
 }
 
+.login-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position right below the user-info */
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: 300px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.login-form {
+  margin: 0;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.login-form button:hover {
+  background-color: #333;
+}
+
+.social-login button {
+  display: flex; /* Uses flexbox for alignment */
+  align-items: center; /* Aligns items vertically */
+  justify-content: center; /*Centers the content horizontally*/
+  width: 100%;
+  padding: 10px;
+  margin-right: 4%;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.social-login button:last-child {
+  margin-right: 0;
+}
+
+/* Styles for the User icon that triggers dropdown */
+.user-icon {
+  cursor: pointer;
+}
+
+/* Style for Forgot Password and Register Now links */
+.link-text {
+  display: block; /* Makes the link fill the container */
+  text-align: center; /* Centers the text */
+  text-decoration: none; /* Removes the underline from the link */
+  margin: 5px 0; /* Adds space above and below the link */
+  color: #333; /* Sets the text color */
+}
+
 
 
 
@@ -209,13 +284,6 @@ Add interactivity .search-bar input:focus {
   padding: 0;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
 
 .content {
   flex: 1;
@@ -302,14 +370,12 @@ body {
   display: flex;
 }
 
-.social-icons a {
-  display: inline-block;
-  margin-right: 10px; /* Space between icons */
+.social-icons i{
+  margin-left: 7px;
+  margin-right: 10px;
+  margin-top: 20px;
+  height: 20px; /* Adjust the size as needed */
   text-decoration: none; /* Removes underline from links */
-}
-
-.social-icons img {
-  height: 30px; /* Adjust the size as needed */
 }
 
 .subscribe-container {
@@ -343,7 +409,7 @@ body {
 }
 
 .subscribe-form button {
-  background-color: #000; /* Background color for the button */
+  background-color: red; /* Background color for the button */
   color: #fff; /* Text color for the button */
   border: none; /* No border for button */
   padding: 10px 20px;
