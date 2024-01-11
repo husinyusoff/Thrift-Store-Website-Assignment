@@ -1,3 +1,4 @@
+
 /* HEADER STYLE */
 
 body,
@@ -5,13 +6,10 @@ html {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  padding-top: 65px;
+  height: 100%;
 }
 
-
-/* Adjust padding-top for the content */
-.content {
-  padding-top: 110px; /* Adjust this value based on the total height of the header and navigation bar */
-}
 
 .header-background {
   width: 100%; /* Adjust as per the actual width of the header */
@@ -21,6 +19,7 @@ html {
 }
 .header {
   width: 1100px; /* Adjust as per the actual width of the header */
+  width: 100%;
   height: 70px; /* Adjust as per the actual height of the header */
   background-color: lightgray; /* Match the background color */
   display: flex;
@@ -28,6 +27,10 @@ html {
   justify-content: center;
   padding: 20px 20px; /* Add padding on the sides */
   margin: auto;
+}
+
+.container {
+  max-width: 100%; /* This prevents any container from being wider than the viewport */
 }
 
 .logo {
@@ -84,15 +87,14 @@ Add interactivity .search-bar input:focus {
   width: 100%;
 }
 
-.sticky + .content {
-  padding-top: 102px;
-}
 
 .header-background,
 .navbar-background {
   position: fixed;
   top: 0; /* Align at the top */
-  z-index: 20; /* Ensure it stays above other content */
+  bottom: 0;
+  width: 100%;
+  z-index: 10; /* Ensure it stays above other content */
 }
 
 /* NAVIGATION BAR */
@@ -106,17 +108,18 @@ Add interactivity .search-bar input:focus {
 }
 
 .navbar {
-  width: 1100px; /* Adjust as per the actual width of the navigation bar */
-  height: 40px; /* Adjust as per the actual height of the navigation bar */
-  background-color: #f1f1f1; /* Match the background color */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 20px; /* Add padding on the sides */
-  margin: auto;
+  width: 100%; /* Ensure navbar spans full width */
+  height: 40px; /* Set a fixed height for your navbar */
+  background-color: #f1f1f1; /* Background color */
+  display:flex; /* Use flexbox to arrange children */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  padding: 0 20px; /* Adjust padding as needed */
+  margin: auto; /* Center the navbar */
   text-align: center;
   z-index: 5; /* Ensure it stays above other content */
 }
+
 
 /* Dropdown Styles */
 .dropdown {
@@ -131,7 +134,7 @@ Add interactivity .search-bar input:focus {
   position: absolute;
   background-color: #f9f9f9;
   left: 0; /* Align to the left edge of the parent menu item */
-  top: 42px; /* Adjust this value to match the height of your navbar */
+  top: 40px; /* Adjust this value to match the height of your navbar */
   min-width: 160px; /* Adjust this value to match the width of the menu item if necessary */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -150,12 +153,17 @@ Add interactivity .search-bar input:focus {
 
 
 .menu-item {
+  height: 40px;
+  max-width: 150px;
   font-size: 10px; /* Adjust the size as needed */
   color: #000;
   padding: 10px 12px; /* Adjust the padding as needed */
   cursor: pointer;
-  display: inline-block;
-  vertical-align: middle;
+  /* vertical-align: middle; */
+  justify-content: center;
+  /* overflow: hidden; */
+  text-overflow:ellipsis;
+  text-wrap: nowrap;
 }
 
 
@@ -163,7 +171,7 @@ Add interactivity .search-bar input:focus {
 .menu-item.dropdown {
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
-  margin-left: auto; /* Pushes the special item to the right */
+  /* margin-left: auto; Pushes the special item to the right */
 }
 
 .menu-item.special {
@@ -176,8 +184,16 @@ Add interactivity .search-bar input:focus {
   display: flex;
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
-  margin-left: auto; /* Pushes the special item to the right */
+  /* margin-left: auto;Pushes the special item to the right */
   padding-top: 15px;
+  
+}
+
+.menu-item.special:hover {
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+  
 }
 
 .menu-item:not(.special):hover {
@@ -271,6 +287,156 @@ Add interactivity .search-bar input:focus {
 }
 
 
+/* Breadcrumb styles */
+.breadcrumb-container {
+  margin-bottom: 30px;
+  background-color: #fff;
+  text-align: left;
+  margin-left: 140px;
+}
+
+.breadcrumb-container a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Category title styles */
+.category-title {
+  background-color: #fff;
+  color: #333;
+  text-align:left;
+  margin-left: 150px;
+  padding: 8px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  /* Adjust padding as necessary */
+  gap: 20px;
+  /* This will create space between the cards */
+  justify-content: center;
+}
+
+.card {
+  flex: 0 0 20%;
+  /* flex-grow: 0, flex-shrink: 0, flex-basis: 25% */
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  /* Include padding and border in the element's total width and height */
+  margin-bottom: 5px;
+  /* Space between rows */
+}
+
+.image-placeholder {
+  background: #eee;
+  width: 100%;
+  height: 250px;
+  /* Fixed height for a square image */
+  position: relative;
+}
+
+.category {
+  font-size: 14px;
+  color: #fff;
+  background-color: red;
+  padding: 5px 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+.text-content {
+  text-align: left;
+}
+
+.category,
+.title,
+.brand {
+  margin: 5px 0;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  /* This will push the prices to the left and the discount to the right */
+  align-items: center;
+}
+
+.price-details {
+  display: flex;
+  align-items: center;
+  /* This ensures that the original price and sale price are aligned on the same line */
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 5px;
+  /* Space between the original price and the sale price */
+}
+
+.sale-price {
+  color: #333;
+  font-weight: bold;
+}
+
+.discount {
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  padding: 5px 5px;
+  border-width: 1px;
+  border-color: #333;
+  border-style: solid;
+  /* No need for margin-left here as it will now be aligned to the right */
+}
+
+
+/* Pagination styles */
+.pagination-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.pagination-arrow,
+.pagination-number {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination-number:hover,
+.pagination-arrow:hover {
+  color: #fff;
+  background-color: #333;
+  border: 1px solid #333;
+}
+
+.pagination-number.active {
+  color: #fff;
+  background-color: red;
+  border: 1px solid #ff3e00;
+}
+
+.pagination-ellipsis {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+
 
 
 
@@ -290,21 +456,45 @@ Add interactivity .search-bar input:focus {
 }
 
 .footer {
-  background-color: #f2f2f2; /* Gray background */
-  color: #333; /* Dark text */
-  position: fixed;
-  bottom: 40px; /* Height of the black copyright box */
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  margin-top: 43px;
   width: 100%;
-  overflow-x: auto;
-  padding: 20px 0;
+  background-color: #f2f2f2; /* Your desired background color */
+  z-index: 1; /* Ensures the footer is above other content */
+  /* height: 300px; */
 }
 
+/* Style for the footer's inner content */
 .footer-inner {
-  min-width: 1520px; /* This is the minimum width the footer will have */
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 50px;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 0 50px; /* Adjust this value to fit your content */
+  min-height: 150px; /* Or whatever height you prefer for your footer */
+}
+
+/* Ensure the very bottom part of the footer, likely with copyright and payment logos, also sticks to the bottom */
+.footer-bottom {
+  /* position: fixed; */
+  display: flex;
+  left: 0;
+  /* bottom: 0; */
+  width: 100%;
+  background-color: white; /* Or any other color */
+  color: black; /* Text color */
+  z-index: 1;
+  padding: 10px 20px;
+  text-align: center; /* This centers the text horizontally */
+  box-sizing: border-box;
+}
+
+/* The following rule will push the .footer-bottom up to sit on top of .footer */
+.footer-bottom {
+  bottom: 0px; /* Adjust this value to the height of your .footer */
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-section {
@@ -345,17 +535,6 @@ Add interactivity .search-bar input:focus {
   color: #333;
 }
 
-.footer-bottom {
-  color: black;
-  position: fixed;
-  bottom: 0;
-  width: 1500px;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.8em;
-}
 
 .footer-bottom .copy {
   text-align: left;
@@ -363,7 +542,6 @@ Add interactivity .search-bar input:focus {
 
 .footer-bottom .payment-logos img {
   height: 20px; /* Adjust as necessary for your logos */
-  margin-left: 10px;
 }
 
 .social-icons {
