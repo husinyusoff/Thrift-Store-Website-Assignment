@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .facebook-button,
+        .google-button,
+        .instagram-button {
+            background-color: red;
+            color: #131212;;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-right: 15px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .instagram-button:hover {
+        background-color: #555; /* Change background color on hover */
+         }
+        .google-button:hover {
+         background-color: #555; /* Change background color on hover */
+        }
+        .facebook-button:hover {
+         background-color: #555; /* Change background color on hover */
+         }
+
+         .instagram-button:active {
+         background-color: #888; /* Change background color when pressed */
+         }
+         .google-button:active {
+         background-color: #888; /* Change background color when pressed */
+         }
+         .facebook-button:active {
+          background-color: #888; /* Change background color when pressed */
+          }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .profile-container {
+            text-align: center;
+            margin-top: 30px;
+            border-image: auto;
+            
+        }
+        img {
+            display: block;
+            margin: auto;
+            max-width: 100%; /* Ensure the image doesn't exceed the viewport width */
+            max-height: 100%; /* Ensure the image doesn't exceed the viewport height */
+            width: 10%; /* Adjust the width as needed */
+            height: auto; /* Maintain the aspect ratio */
+        }
+
+        .profile-container h3 {
+            text-align: center;
+        }
+
+        .register-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 30px;
+            background-color: #ff0000;
+            color: #131212;
+            border: black;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-left: 600px;
+            transition: background-color 0.3s ease;
+        }
+        .register-button:hover {
+         background-color: #555; /* Change background color on hover */
+         }
+
+        .register-button:active {
+         background-color: #888; /* Change background color when pressed */
+        }
+        
+        /* Center the form columns */
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <!-- Register buttons -->
+    <div class="container">
+        <div class="button-container">
+            <!-- Buttons go here -->
+            
+        <button class="facebook-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+            <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+          </svg><b>Register with facebook</b></button>
+        <button class="google-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+            <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+          </svg><b>Register with google</b></button>
+        <button class="instagram-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+            <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+          </svg><b>Register with instagram</b> </button>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <!-- PROFILE PICTURE -->
+    <div class="profile-container">
+        <h3>Profile picture</h3>
+        <div id="profile-container">
+            <div class="row flex-wrap">
+                <img id="profileImage" size="50px"  src="ui.png" />
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Personal Detail -->
+    <div class="form-container">
+        <div class="personal container">
+            <h4>Personal detail</h4>
+            <div class="row">
+                <!-- Left Column for Full Name -->
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" class="form-control" style="width: 300px;" id="fullName" placeholder="Enter fullname">
+                        </div>
+                    </form>
+                </div>
+                <!-- Right Column for Last Name -->
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" style="width: 300px;" id="lastName" placeholder="Enter lastname">
+                        </div>
+                    </form>
+                </div>
+                <!-- Left Column for Email -->
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="emailAddress">Email Address</label>
+                            <input type="text" class="form-control" style="width: 300px;" id="emailAddress" placeholder="Enter emailaddress">
+                        </div>
+                    </form>
+                </div>
+                <!-- Right Column for Mobile Number -->
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="mobileNumber">Mobile Number</label>
+                            <input type="text" class="form-control" style="width: 300px;" id="mobileNumber" placeholder="Enter mobilenumber">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Address -->
+        <div class="address container">
+            <h4>Address</h4>
+            <div class="row">
+                <!-- Left Column for street-->
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="street">Street</label>
+                            <input type="text" class="form-control" style="width: 300px;" id="street" placeholder="Enter street">
+                        </div>
+                    </form>
+                </div>
+                <!-- Right Column for area -->
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="area">Area</label>
+                            <input type="text" class="form-control" style="width: 300px;" id="area" placeholder="Enter area">
+                        </div>
+                    </form>
+                </div>
+                <!-- Left Column for postcode -->
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="postcode">Post Code</label>
+                            <input type="text" class="form-control" style="width: 300px;" id="postcode" placeholder="Enter postcode">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button register -->
+   
+        <br>
+        <button class="register-button"><b>REGISTER</b></button>
+    </div>
+    <!-- Add Bootstrap JS and Popper.js scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
+
+
