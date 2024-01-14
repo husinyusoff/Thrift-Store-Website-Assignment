@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css">
   <script src="https://kit.fontawesome.com/23d37367c9.js" crossorigin="anonymous"></script>
-  <title>Header & Footer Template</title>
+  <title>ThrifiNity Malaysia</title>
 </head>
 
 <body>
@@ -21,33 +21,19 @@
         <div class="search-bar">
           <input id="search-bar" type="text" placeholder="Type in and hit Enter" autocomplete="on" />
         </div>
+
+        <!-- User Info Section -->
         <div class="user-info">
-          <span class="user-icon" onclick="toggleLoginDropdown()">
-            <i class="fa-solid fa-user fa-lg"></i>
+          <span class="user-icon" onclick="toggleUserDropdown()">
+            <img src="./images/Angry Cat.png" alt="User" width="30" height="30"> <!-- Replace with your image path -->
           </span>
           <span class="language">ENG</span>
-          <!-- Login Dropdown Form -->
-          <div class="login-dropdown" id="loginDropdown">
-            <!-- Login Form -->
-            <form class="login-form">
-              <input type="text" placeholder="Email" name="email" autocomplete="email" required />
-              <input type="password" placeholder="Password" name="password" autocomplete="current-password" required />
-              <button type="submit">Sign In</button>
-              <a href="#" class="link-text">Forgot Password?</a>
-              <div class="social-login">
-                <button type="button" class="social-button facebook-button">
-                  <i class="fa-brands fa-square-facebook fa-xl" style="margin-right: 5px;"></i>
-                  Login with Facebook
-                </button>
-                <a href="./Logged-in Page(open product page first).html"> <!-- Add the path to your target HTML file here -->
-                  <button type="button" class="social-button google-button">
-                      <i class="fa-brands fa-google fa-xl" style="margin-right: 5px;"></i>
-                      Login with Google
-                  </button>
-              </a>
-              </div>
-              <a href="#" class="link-text">Register Now</a>
-            </form>
+          <!-- User Dropdown -->
+          <div class="user-dropdown" id="userDropdown">
+            <a href="./User Dashboard.html">My Account</a>
+            <a href="#">My Purchases</a>
+            <a href="./Seller Profile.html">My Shop</a>
+            <a href="./Product Page.html">Logout</a>
           </div>
         </div>
       </div>
@@ -100,240 +86,293 @@
     <div class="grid-container">
       <!-- Repeat this block for each card, total of 16 times -->
       <div class="card">
-        <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+        <div class="image-placeholder">
           <div class="category">Photography</div>
         </div>
         <div class="text-content">
-          <div class="title">Sony RX-100</div>
-          <!-- The price div will be pushed to the bottom -->
+          <div class="title">Product Title Goes Here</div>
+          <div class="brand">Brand</div>
           <div class="price">
             <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
+              <span class="original-price">RM XX.XX</span>
+              <span class="sale-price">RM XX.XX</span>
             </div>
             <span class="discount">30% OFF</span>
           </div>
         </div>
       </div>
-      
-      <div class="card">
-        <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
-          <div class="category">Photography</div>
-        </div>
-        <div class="text-content">
-          <div class="title">Sony RX-100</div>
-          <!-- The price div will be pushed to the bottom -->
-          <div class="price">
-            <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
-            </div>
-            <span class="discount">30% OFF</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="card">
-        <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
-          <div class="category">Photography</div>
-        </div>
-        <div class="text-content">
-          <div class="title">Sony RX-100</div>
-          <!-- The price div will be pushed to the bottom -->
-          <div class="price">
-            <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
-            </div>
-            <span class="discount">30% OFF</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="card">
-        <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
-          <div class="category">Photography</div>
-        </div>
-        <div class="text-content">
-          <div class="title">Sony RX-100</div>
-          <!-- The price div will be pushed to the bottom -->
-          <div class="price">
-            <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
-            </div>
-            <span class="discount">30% OFF</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="card">
-        <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
-          <div class="category">Photography</div>
-        </div>
-        <div class="text-content">
-          <div class="title">Sony RX-100</div>
-          <!-- The price div will be pushed to the bottom -->
-          <div class="price">
-            <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
-            </div>
-            <span class="discount">30% OFF</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="card">
-        <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
-          <div class="category">Photography</div>
-        </div>
-        <div class="text-content">
-          <div class="title">Sony RX-100</div>
-          <!-- The price div will be pushed to the bottom -->
-          <div class="price">
-            <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
-            </div>
-            <span class="discount">30% OFF</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="card">
-        <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
-          <div class="category">Photography</div>
-        </div>
-        <div class="text-content">
-          <div class="title">Sony RX-100</div>
-          <!-- The price div will be pushed to the bottom -->
-          <div class="price">
-            <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
-            </div>
-            <span class="discount">30% OFF</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="card">
-        <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
-          <div class="category">Photography</div>
-        </div>
-        <div class="text-content">
-          <div class="title">Sony RX-100</div>
-          <!-- The price div will be pushed to the bottom -->
-          <div class="price">
-            <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
-            </div>
-            <span class="discount">30% OFF</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="card">
-        <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
-          <div class="category">Photography</div>
-        </div>
-        <div class="text-content">
-          <div class="title">Sony RX-100</div>
-          <!-- The price div will be pushed to the bottom -->
-          <div class="price">
-            <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
-            </div>
-            <span class="discount">30% OFF</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="card">
-        <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
-          <div class="category">Photography</div>
-        </div>
-        <div class="text-content">
-          <div class="title">Sony RX-100</div>
-          <!-- The price div will be pushed to the bottom -->
-          <div class="price">
-            <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
-            </div>
-            <span class="discount">30% OFF</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="card">
-        <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
-          <div class="category">Photography</div>
-        </div>
-        <div class="text-content">
-          <div class="title">Sony RX-100</div>
-          <!-- The price div will be pushed to the bottom -->
-          <div class="price">
-            <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
-            </div>
-            <span class="discount">30% OFF</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="card">
-        <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
-          <div class="category">Photography</div>
-        </div>
-        <div class="text-content">
-          <div class="title">Sony RX-100</div>
-          <!-- The price div will be pushed to the bottom -->
-          <div class="price">
-            <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
-            </div>
-            <span class="discount">30% OFF</span>
-          </div>
-        </div>
-      </div>
-      
 
- 
+      <div class="card">
+        <div class="image-placeholder">
+          <div class="category">Photography</div>
+        </div>
+        <div class="text-content">
+          <div class="title">Product Title Goes Here</div>
+          <div class="brand">Brand</div>
+          <div class="price">
+            <div class="price-details">
+              <span class="original-price">RM XX.XX</span>
+              <span class="sale-price">RM XX.XX</span>
+            </div>
+            <span class="discount">30% OFF</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-placeholder">
+          <div class="category">Photography</div>
+        </div>
+        <div class="text-content">
+          <div class="title">Product Title Goes Here</div>
+          <div class="brand">Brand</div>
+          <div class="price">
+            <div class="price-details">
+              <span class="original-price">RM XX.XX</span>
+              <span class="sale-price">RM XX.XX</span>
+            </div>
+            <span class="discount">30% OFF</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-placeholder">
+          <div class="category">Photography</div>
+        </div>
+        <div class="text-content">
+          <div class="title">Product Title Goes Here</div>
+          <div class="brand">Brand</div>
+          <div class="price">
+            <div class="price-details">
+              <span class="original-price">RM XX.XX</span>
+              <span class="sale-price">RM XX.XX</span>
+            </div>
+            <span class="discount">30% OFF</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-placeholder">
+          <div class="category">Photography</div>
+        </div>
+        <div class="text-content">
+          <div class="title">Product Title Goes Here</div>
+          <div class="brand">Brand</div>
+          <div class="price">
+            <div class="price-details">
+              <span class="original-price">RM XX.XX</span>
+              <span class="sale-price">RM XX.XX</span>
+            </div>
+            <span class="discount">30% OFF</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-placeholder">
+          <div class="category">Photography</div>
+        </div>
+        <div class="text-content">
+          <div class="title">Product Title Goes Here</div>
+          <div class="brand">Brand</div>
+          <div class="price">
+            <div class="price-details">
+              <span class="original-price">RM XX.XX</span>
+              <span class="sale-price">RM XX.XX</span>
+            </div>
+            <span class="discount">30% OFF</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-placeholder">
+          <div class="category">Photography</div>
+        </div>
+        <div class="text-content">
+          <div class="title">Product Title Goes Here</div>
+          <div class="brand">Brand</div>
+          <div class="price">
+            <div class="price-details">
+              <span class="original-price">RM XX.XX</span>
+              <span class="sale-price">RM XX.XX</span>
+            </div>
+            <span class="discount">30% OFF</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-placeholder">
+          <div class="category">Photography</div>
+        </div>
+        <div class="text-content">
+          <div class="title">Product Title Goes Here</div>
+          <div class="brand">Brand</div>
+          <div class="price">
+            <div class="price-details">
+              <span class="original-price">RM XX.XX</span>
+              <span class="sale-price">RM XX.XX</span>
+            </div>
+            <span class="discount">30% OFF</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-placeholder">
+          <div class="category">Photography</div>
+        </div>
+        <div class="text-content">
+          <div class="title">Product Title Goes Here</div>
+          <div class="brand">Brand</div>
+          <div class="price">
+            <div class="price-details">
+              <span class="original-price">RM XX.XX</span>
+              <span class="sale-price">RM XX.XX</span>
+            </div>
+            <span class="discount">30% OFF</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-placeholder">
+          <div class="category">Photography</div>
+        </div>
+        <div class="text-content">
+          <div class="title">Product Title Goes Here</div>
+          <div class="brand">Brand</div>
+          <div class="price">
+            <div class="price-details">
+              <span class="original-price">RM XX.XX</span>
+              <span class="sale-price">RM XX.XX</span>
+            </div>
+            <span class="discount">30% OFF</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-placeholder">
+          <div class="category">Photography</div>
+        </div>
+        <div class="text-content">
+          <div class="title">Product Title Goes Here</div>
+          <div class="brand">Brand</div>
+          <div class="price">
+            <div class="price-details">
+              <span class="original-price">RM XX.XX</span>
+              <span class="sale-price">RM XX.XX</span>
+            </div>
+            <span class="discount">30% OFF</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-placeholder">
+          <div class="category">Photography</div>
+        </div>
+        <div class="text-content">
+          <div class="title">Product Title Goes Here</div>
+          <div class="brand">Brand</div>
+          <div class="price">
+            <div class="price-details">
+              <span class="original-price">RM XX.XX</span>
+              <span class="sale-price">RM XX.XX</span>
+            </div>
+            <span class="discount">30% OFF</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-placeholder">
+          <div class="category">Photography</div>
+        </div>
+        <div class="text-content">
+          <div class="title">Product Title Goes Here</div>
+          <div class="brand">Brand</div>
+          <div class="price">
+            <div class="price-details">
+              <span class="original-price">RM XX.XX</span>
+              <span class="sale-price">RM XX.XX</span>
+            </div>
+            <span class="discount">30% OFF</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-placeholder">
+          <div class="category">Photography</div>
+        </div>
+        <div class="text-content">
+          <div class="title">Product Title Goes Here</div>
+          <div class="brand">Brand</div>
+          <div class="price">
+            <div class="price-details">
+              <span class="original-price">RM XX.XX</span>
+              <span class="sale-price">RM XX.XX</span>
+            </div>
+            <span class="discount">30% OFF</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-placeholder">
+          <div class="category">Photography</div>
+        </div>
+        <div class="text-content">
+          <div class="title">Product Title Goes Here</div>
+          <div class="brand">Brand</div>
+          <div class="price">
+            <div class="price-details">
+              <span class="original-price">RM XX.XX</span>
+              <span class="sale-price">RM XX.XX</span>
+            </div>
+            <span class="discount">30% OFF</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="image-placeholder">
+          <div class="category">Photography</div>
+        </div>
+        <div class="text-content">
+          <div class="title">Product Title Goes Here</div>
+          <div class="brand">Brand</div>
+          <div class="price">
+            <div class="price-details">
+              <span class="original-price">RM XX.XX</span>
+              <span class="sale-price">RM XX.XX</span>
+            </div>
+            <span class="discount">30% OFF</span>
+          </div>
+        </div>
+      </div>
 
       <!-- ...repeat for other cards... -->
 
     </div>
 
-          <!-- Pagination Section -->
-          <div class="pagination-container">
-            <a href="#" class="pagination-arrow">&lt;</a>
-            <a href="#" class="pagination-number">1</a>
-            <a href="#" class="pagination-number active">2</a>
-            <a href="#" class="pagination-number">3</a>
-            <a href="#" class="pagination-number">4</a>
-            <a href="#" class="pagination-number">5</a>
-            <span class="pagination-ellipsis">...</span>
-            <a href="#" class="pagination-arrow">&gt;</a>
-          </div>
-    
+    <!-- Pagination Section -->
+    <div class="pagination-container">
+      <a href="#" class="pagination-arrow">&lt;</a>
+      <a href="#" class="pagination-number">1</a>
+      <a href="#" class="pagination-number active">2</a>
+      <a href="#" class="pagination-number">3</a>
+      <a href="#" class="pagination-number">4</a>
+      <a href="#" class="pagination-number">5</a>
+      <span class="pagination-ellipsis">...</span>
+      <a href="#" class="pagination-arrow">&gt;</a>
+    </div>
+
 
     <!-- Footer Section -->
     <footer class="footer">
@@ -404,35 +443,34 @@
 
     <script>
 
-      // Function to toggle login dropdown
-      window.toggleLoginDropdown = function () {
-        var loginDropdown = document.getElementById("loginDropdown");
-        if (loginDropdown.style.display === "block") {
-          loginDropdown.style.display = "none";
+      // Function to toggle user dropdown
+      window.toggleUserDropdown = function () {
+        var userDropdown = document.getElementById("userDropdown");
+        if (userDropdown.style.display === "block") {
+          userDropdown.style.display = "none";
         } else {
-          loginDropdown.style.display = "block";
+          userDropdown.style.display = "block";
         }
       }
 
-
-      // Function to close login dropdown
-      function closeLoginDropdown() {
-        var loginDropdown = document.getElementById("loginDropdown");
-        loginDropdown.style.display = "none";
+      // Function to close user dropdown
+      function closeUserDropdown() {
+        var userDropdown = document.getElementById("userDropdown");
+        userDropdown.style.display = "none";
       }
 
       // Initialize dropdown state on page load
       document.addEventListener('DOMContentLoaded', function () {
-        document.getElementById("loginDropdown").style.display = "none";
+        document.getElementById("userDropdown").style.display = "none";
       });
 
-      // Event listener to handle clicks outside the user icon and login dropdown
+      // Event listener to handle clicks outside the user icon and user dropdown
       document.addEventListener('click', function (event) {
         var isClickInsideUserIcon = document.querySelector('.user-icon').contains(event.target);
-        var isClickInsideDropdown = document.getElementById("loginDropdown").contains(event.target);
+        var isClickInsideDropdown = document.getElementById("userDropdown").contains(event.target);
 
         if (!isClickInsideUserIcon && !isClickInsideDropdown) {
-          closeLoginDropdown();
+          closeUserDropdown();
         }
       });
 
@@ -440,7 +478,6 @@
       document.querySelector('.user-icon').addEventListener('click', function (event) {
         event.stopPropagation();
       });
-
 
     </script>
 
