@@ -1,110 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
-    <!-- Add Bootstrap CSS link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            background-color: #f8f9fa;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/23d37367c9.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>Header & Footer Template</title>
+</head>
+<style>
+    .facebook-button,
+.google-button,
+.instagram-button {
+    background-color: red;
+    color: #131212;;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size-adjust:1px ;
+}
+.instagram-button:hover {
+background-color: #555; /* Change background color on hover */
+ }
+.google-button:hover {
+ background-color: #555; /* Change background color on hover */
+}
+.facebook-button:hover {
+ background-color: #555; /* Change background color on hover */
+ }
 
-        .facebook-button,
-        .google-button,
-        .instagram-button {
-            background-color: red;
-            color: #131212;;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-            margin-right: 15px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-        .instagram-button:hover {
-        background-color: #555; /* Change background color on hover */
-         }
-        .google-button:hover {
-         background-color: #555; /* Change background color on hover */
-        }
-        .facebook-button:hover {
-         background-color: #555; /* Change background color on hover */
-         }
+ .instagram-button:active {
+ background-color: #888; /* Change background color when pressed */
+ }
+ .google-button:active {
+ background-color: #888; /* Change background color when pressed */
+ }
+ .facebook-button:active {
+  background-color: #888; /* Change background color when pressed */
+  }
 
-         .instagram-button:active {
-         background-color: #888; /* Change background color when pressed */
-         }
-         .google-button:active {
-         background-color: #888; /* Change background color when pressed */
-         }
-         .facebook-button:active {
-          background-color: #888; /* Change background color when pressed */
-          }
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
 
-        .button-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 50px;
-        }
-
-        .profile-container {
-            text-align: center;
-            margin-top: 30px;
-            border-image: auto;
-            
-        }
-        img {
-            display: block;
-            margin: auto;
-            max-width: 100%; /* Ensure the image doesn't exceed the viewport width */
-            max-height: 100%; /* Ensure the image doesn't exceed the viewport height */
-            width: 10%; /* Adjust the width as needed */
-            height: auto; /* Maintain the aspect ratio */
-        }
-
-        .profile-container h3 {
-            text-align: center;
-        }
-
-        .register-button {
-            display: flex;
+.profile-container {
+    display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 15px 30px;
-            background-color: #ff0000;
-            color: #131212;
-            border: black;
-            border-radius: 5px;
-            font-size: 16px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            cursor: pointer;
-            margin-top: 20px;
-            margin-left: 600px;
-            transition: background-color 0.3s ease;
-        }
-        .register-button:hover {
-         background-color: #555; /* Change background color on hover */
-         }
+            margin-top: 30px;
+    text-align: center;
+    margin-top: 30px;
+    border-image: auto;
 
-        .register-button:active {
-         background-color: #888; /* Change background color when pressed */
-        }
-        
-        /* Center the form columns */
-        .form-container {
-            max-width: 600px;
-            margin: auto;
-        }
+    
+}
+#profileImage {
 
-        .form-group {
-            margin-bottom: 15px;
-        }
-    </style>
-</head>
+    max-width: 100%; /* Ensure the image doesn't exceed the viewport width */
+    max-height: 100%; /* Ensure the image doesn't exceed the viewport height */
+    width: 40%; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin-left:80px;
+}
+
+.profile-container h3 {
+    text-align: center;
+}
+
+.register-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    background-color: #ff0000;
+    color: #131212;
+    border: black;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 600px;
+    transition: background-color 0.3s ease;
+}
+.register-button:hover {
+ background-color: #555; /* Change background color on hover */
+ }
+
+.register-button:active {
+ background-color: #888; /* Change background color when pressed */
+}
+
+/* Center the form columns */
+.form-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+</style>
 <body>
+  <!-- Header Section (Placeholder) -->
+  <header>
+    <div class="header-background" id="myHeader">
+      <div class="header">
+        <div class="logo">
+          <img src="4.png" alt="logo" width="180px">
+        </div>
+        <div class="search-bar">
+          <input id="search-bar" type="text" placeholder="Type in and hit Enter" autocomplete="on" />
+        </div>
+        <!-- User Info Section -->
+        <div class="user-info">
+          <span class="user-icon" onclick="toggleUserDropdown()">
+            <img src="Angry Cat.png" alt="User" width="30" height="30"> <!-- Replace with your image path -->
+          </span>
+          <span class="language">ENG</span>
+          <!-- User Dropdown -->
+          <div class="user-dropdown" id="userDropdown">
+            <a href="./User Dashboard.html">My Account</a>
+            <a href="#">My Purchases</a>
+            <a href="./Seller Profile.html">My Shop</a>
+            <a href="./Product Page.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-background">
+      <div class="navbar">
+        <!-- Dropdown Menu Item for ALL CATEGORIES -->
+        <div class="menu-item dropdown">
+          ALL CATEGORIES
+          <div class="dropdown-content">
+            <a href="#">Men's Fashion</a>
+            <a href="#">Women's Fashion</a>
+            <a href="#">Video Games</a>
+            <a href="#">Audio</a>
+            <a href="#">Babies & kids</a>
+            <a href="#">Health & Nutrition</a>
+            <a href="#">Sports Equipment</a>
+            <a href="#">Auto Accessories</a>
+            <a href="#">Pet Supplies</a>
+            <a href="#">Properties</a>
+          </div>
+        </div>
+        <div class="menu-item">MOBILE PHONES &<br />GADGETS</div>
+        <div class="menu-item">BEAUTY &<br />PERSONAL CARE</div>
+        <div class="menu-item">COMPUTER & TECH</div>
+        <div class="menu-item">PHOTOGRAPHY</div>
+        <div class="menu-item">MOTORBIKES</div>
+        <div class="menu-item">CARS</div>
+        <div class="menu-item">HOBBIES & TOYS</div>
+        <div class="menu-item">TV & HOME<br />APPLIANCES</div>
+        <div class="menu-item special">SELL WITH US</div>
+      </div>
+    </div>
     <br>
     <br>
     <br>
@@ -128,14 +192,14 @@
         </div>
     </div>
 
-    <br>
-    <br>
+    
+    
     <!-- PROFILE PICTURE -->
     <div class="profile-container">
-        <h3>Profile picture</h3>
+        <h3>Profile Picture</h3>
         <div id="profile-container">
             <div class="row flex-wrap">
-                <img id="profileImage" size="50px"  src="ui.png" />
+                <img id="profileImage"  src="ui.png" alt="Profile Picture" />
             </div>
         </div>
     </div>
@@ -223,12 +287,390 @@
         <br>
         <button class="register-button"><b>REGISTER</b></button>
     </div>
-    <!-- Add Bootstrap JS and Popper.js scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <div class="content-container">
+      <!-- Welcome Section -->
+      <div class="welcome-section">
+        <div class="profile-picture">
+          <!-- Replace 'path_to_profile_picture.jpg' with the path to the actual image -->
+          <img src="Seller-profile.png" alt="Profile Picture">
+        </div>
+        <h1 class="shop-name">Good Find</h1>
+        <div class="seller-username">
+          @goodseller
+        </div>
+        <div class="seller-social-icons">
+          <i class="fa-brands fa-facebook fa-xl"></i>
+          <i class="fa-brands fa-square-x-twitter fa-xl"></i>
+          <i class="fa-brands fa-square-instagram fa-xl"></i>
+        </div>
+        <div class="seller-bio">
+          <h3>i have been selling since 5 years ago</h3>
+        </div>
+      </div>
+
+      <!-- Reviewed Products Section -->
+      <div class="reviewed-products-section">
+        <div class="reviewed-products-header">
+          <div class="review-title">
+            <h2>Reviewed Products</h2>
+          </div>
+          <div class="products-count">Reviewed 69 Products</div>
+          <button class="add-review-btn">ADD NEW REVIEW</button>
+        </div>
+        <!-- <div class="products-container"> -->
+        <!-- Main Content Section -->
+        <div class="products-container">
+          <!-- Repeat this block for each card, total of 16 times -->
+          <div class="card">
+            <div class="image-container">
+              <img src="Angry Cat.png" alt="Product Image" class="product-image" />
+              <div class="category">Photography</div>
+            </div>
+            <div class="text-content">
+              <div class="title">Sony RX-100</div>
+              <!-- The price div will be pushed to the bottom -->
+              <div class="price">
+                <div class="price-details">
+                  <span class="original-price">RM 700</span>
+                  <span class="sale-price">RM 650</span>
+                </div>
+                <span class="discount">30% OFF</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="image-container">
+              <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+              <div class="category">Photography</div>
+            </div>
+            <div class="text-content">
+              <div class="title">Sony RX-100</div>
+              <!-- The price div will be pushed to the bottom -->
+              <div class="price">
+                <div class="price-details">
+                  <span class="original-price">RM 700</span>
+                  <span class="sale-price">RM 650</span>
+                </div>
+                <span class="discount">30% OFF</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="image-container">
+              <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+              <div class="category">Photography</div>
+            </div>
+            <div class="text-content">
+              <div class="title">Sony RX-100</div>
+              <!-- The price div will be pushed to the bottom -->
+              <div class="price">
+                <div class="price-details">
+                  <span class="original-price">RM 700</span>
+                  <span class="sale-price">RM 650</span>
+                </div>
+                <span class="discount">30% OFF</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="image-container">
+              <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+              <div class="category">Photography</div>
+            </div>
+            <div class="text-content">
+              <div class="title">Sony RX-100</div>
+              <!-- The price div will be pushed to the bottom -->
+              <div class="price">
+                <div class="price-details">
+                  <span class="original-price">RM 700</span>
+                  <span class="sale-price">RM 650</span>
+                </div>
+                <span class="discount">30% OFF</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="image-container">
+              <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+              <div class="category">Photography</div>
+            </div>
+            <div class="text-content">
+              <div class="title">Sony RX-100</div>
+              <!-- The price div will be pushed to the bottom -->
+              <div class="price">
+                <div class="price-details">
+                  <span class="original-price">RM 700</span>
+                  <span class="sale-price">RM 650</span>
+                </div>
+                <span class="discount">30% OFF</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="image-container">
+              <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+              <div class="category">Photography</div>
+            </div>
+            <div class="text-content">
+              <div class="title">Sony RX-100</div>
+              <!-- The price div will be pushed to the bottom -->
+              <div class="price">
+                <div class="price-details">
+                  <span class="original-price">RM 700</span>
+                  <span class="sale-price">RM 650</span>
+                </div>
+                <span class="discount">30% OFF</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="image-container">
+              <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+              <div class="category">Photography</div>
+            </div>
+            <div class="text-content">
+              <div class="title">Sony RX-100</div>
+              <!-- The price div will be pushed to the bottom -->
+              <div class="price">
+                <div class="price-details">
+                  <span class="original-price">RM 700</span>
+                  <span class="sale-price">RM 650</span>
+                </div>
+                <span class="discount">30% OFF</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="image-container">
+              <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+              <div class="category">Photography</div>
+            </div>
+            <div class="text-content">
+              <div class="title">Sony RX-100</div>
+              <!-- The price div will be pushed to the bottom -->
+              <div class="price">
+                <div class="price-details">
+                  <span class="original-price">RM 700</span>
+                  <span class="sale-price">RM 650</span>
+                </div>
+                <span class="discount">30% OFF</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="image-container">
+              <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+              <div class="category">Photography</div>
+            </div>
+            <div class="text-content">
+              <div class="title">Sony RX-100</div>
+              <!-- The price div will be pushed to the bottom -->
+              <div class="price">
+                <div class="price-details">
+                  <span class="original-price">RM 700</span>
+                  <span class="sale-price">RM 650</span>
+                </div>
+                <span class="discount">30% OFF</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="image-container">
+              <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+              <div class="category">Photography</div>
+            </div>
+            <div class="text-content">
+              <div class="title">Sony RX-100</div>
+              <!-- The price div will be pushed to the bottom -->
+              <div class="price">
+                <div class="price-details">
+                  <span class="original-price">RM 700</span>
+                  <span class="sale-price">RM 650</span>
+                </div>
+                <span class="discount">30% OFF</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="image-container">
+              <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+              <div class="category">Photography</div>
+            </div>
+            <div class="text-content">
+              <div class="title">Sony RX-100</div>
+              <!-- The price div will be pushed to the bottom -->
+              <div class="price">
+                <div class="price-details">
+                  <span class="original-price">RM 700</span>
+                  <span class="sale-price">RM 650</span>
+                </div>
+                <span class="discount">30% OFF</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="image-container">
+              <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+              <div class="category">Photography</div>
+            </div>
+            <div class="text-content">
+              <div class="title">Sony RX-100</div>
+              <!-- The price div will be pushed to the bottom -->
+              <div class="price">
+                <div class="price-details">
+                  <span class="original-price">RM 700</span>
+                  <span class="sale-price">RM 650</span>
+                </div>
+                <span class="discount">30% OFF</span>
+              </div>
+            </div>
+          </div>
+          
     
+
+          <!-- ...repeat for other cards... -->
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Pagination Section -->
+    <div class="pagination-container">
+      <a href="#" class="pagination-arrow">&lt;</a>
+      <a href="#" class="pagination-number">1</a>
+      <a href="#" class="pagination-number active">2</a>
+      <a href="#" class="pagination-number">3</a>
+      <a href="#" class="pagination-number">4</a>
+      <a href="#" class="pagination-number">5</a>
+      <span class="pagination-ellipsis">...</span>
+      <a href="#" class="pagination-arrow">&gt;</a>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-section footer-logo">
+          <img src="./Logo/1.png" alt="Your Logo" width="110px" />
+          <!-- Social Icons -->
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook fa-xl"></i>
+            <i class="fa-brands fa-square-x-twitter fa-xl"></i>
+            <i class="fa-brands fa-square-instagram fa-xl"></i>
+          </div>
+        </div>
+        <!-- Main Pages -->
+        <div class="footer-section">
+          <h3>Main Pages</h3>
+          <ul>
+            <li><a href="#">Sell with Us</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Promos</a></li>
+            <li><a href="#">Become an Ambassador</a></li>
+          </ul>
+        </div>
+        <!-- Policy -->
+        <div class="footer-section">
+          <h3>Policy</h3>
+          <ul>
+            <li><a href="#">Terms of Usage</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li>
+              <a href="#">Return Policy<br /><br /><br /></a>
+            </li>
+          </ul>
+        </div>
+        <!-- Categories -->
+        <div class="footer-section">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#">Skincare</a></li>
+            <li><a href="#">Makeup</a></li>
+            <li><a href="#">Hair Care</a></li>
+            <li><a href="#">Bath & Body</a></li>
+            <li><a href="#">Beauty Supplements</a></li>
+          </ul>
+        </div>
+        <!-- Subscribe Section -->
+        <div class="subscribe-container">
+          <h3>Subscribe</h3>
+          <p>
+            Subscribe to our newsletter, so that you can be the first to know
+            about new offers and promotions.
+          </p>
+          <form action="#" method="post" class="subscribe-form">
+            <input type="email" name="email" placeholder="Enter Email Address" required />
+            <button type="submit">SUBSCRIBE</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="copy">©ThrifiNity 2023 All Rights Reserved.</div>
+        <div class="payment-logos">
+          <img src="./Logo/cc-visa.svg" alt="Visa" />
+          <img src="./Logo/cc-mastercard.svg" alt="MasterCard" />
+        </div>
+      </div>
+    </footer>
+
+    <script>
+
+      // Function to toggle user dropdown
+      window.toggleUserDropdown = function () {
+        var userDropdown = document.getElementById("userDropdown");
+        if (userDropdown.style.display === "block") {
+          userDropdown.style.display = "none";
+        } else {
+          userDropdown.style.display = "block";
+        }
+      }
+
+      // Function to close user dropdown
+      function closeUserDropdown() {
+        var userDropdown = document.getElementById("userDropdown");
+        userDropdown.style.display = "none";
+      }
+
+      // Initialize dropdown state on page load
+      document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById("userDropdown").style.display = "none";
+      });
+
+      // Event listener to handle clicks outside the user icon and user dropdown
+      document.addEventListener('click', function (event) {
+        var isClickInsideUserIcon = document.querySelector('.user-icon').contains(event.target);
+        var isClickInsideDropdown = document.getElementById("userDropdown").contains(event.target);
+
+        if (!isClickInsideUserIcon && !isClickInsideDropdown) {
+          closeUserDropdown();
+        }
+      });
+
+      // Prevent event propagation from the user icon to the document
+      document.querySelector('.user-icon').addEventListener('click', function (event) {
+        event.stopPropagation();
+      });
+
+
+    </script>
+
 </body>
+
 </html>
-
-
