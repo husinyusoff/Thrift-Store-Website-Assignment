@@ -21,31 +21,18 @@
         <div class="search-bar">
           <input id="search-bar" type="text" placeholder="Type in and hit Enter" autocomplete="on" />
         </div>
+        <!-- User Info Section -->
         <div class="user-info">
-          <span class="user-icon" onclick="toggleLoginDropdown()">
-            <i class="fa-solid fa-user fa-lg"></i>
+          <span class="user-icon" onclick="toggleUserDropdown()">
+            <img src="./images/Angry Cat.png" alt="User" width="30" height="30"> <!-- Replace with your image path -->
           </span>
           <span class="language">ENG</span>
-          <!-- Login Dropdown Form -->
-          <div class="login-dropdown" id="loginDropdown">
-            <!-- Login Form -->
-            <form class="login-form">
-              <input type="text" placeholder="Email" name="email" autocomplete="email" required />
-              <input type="password" placeholder="Password" name="password" autocomplete="current-password" required />
-              <button type="submit">Sign In</button>
-              <a href="#" class="link-text">Forgot Password?</a>
-              <div class="social-login">
-                <button type="button" class="social-button facebook-button">
-                  <i class="fa-brands fa-square-facebook fa-xl" style="margin-right: 5px;"></i>
-                  Login with Facebook
-                </button>
-                <button type="button" class="social-button google-button">
-                  <i class="fa-brands fa-google fa-xl" style="margin-right: 5px;"></i>
-                  Login with Google
-                </button>
-              </div>
-              <a href="#" class="link-text">Register Now</a>
-            </form>
+          <!-- User Dropdown -->
+          <div class="user-dropdown" id="userDropdown">
+            <a href="./User Dashboard.html">My Account</a>
+            <a href="#">My Purchases</a>
+            <a href="./Seller Profile.html">My Shop</a>
+            <a href="./Product Page.html">Logout</a>
           </div>
         </div>
       </div>
@@ -71,7 +58,9 @@
         <div class="menu-item">MOBILE PHONES &<br />GADGETS</div>
         <div class="menu-item">BEAUTY &<br />PERSONAL CARE</div>
         <div class="menu-item">COMPUTER & TECH</div>
-        <div class="menu-item">PHOTOGRAPHY</div>
+        <div class="menu-item">
+          <a href="Product Page.html">PHOTOGRAPHY</a>
+        </div>
         <div class="menu-item">MOTORBIKES</div>
         <div class="menu-item">CARS</div>
         <div class="menu-item">HOBBIES & TOYS</div>
@@ -103,276 +92,221 @@
           <div class="products-container">
             <!-- Repeat this block for each card, total of 16 times -->
             <div class="card">
-              <div class="image-placeholder">
+              <div class="image-container">
+                <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
                 <div class="category">Photography</div>
               </div>
               <div class="text-content">
-                <div class="title">Product Title Goes Here</div>
-                <div class="brand">Brand</div>
+                <div class="title">Sony RX-100</div>
+                <!-- The price div will be pushed to the bottom -->
                 <div class="price">
                   <div class="price-details">
-                    <span class="original-price">RM XX.XX</span>
-                    <span class="sale-price">RM XX.XX</span>
+                    <span class="original-price">RM 700</span>
+                    <span class="sale-price">RM 650</span>
                   </div>
                   <span class="discount">30% OFF</span>
                 </div>
               </div>
             </div>
-
+            
             <div class="card">
-              <div class="image-placeholder">
+              <div class="image-container">
+                <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
                 <div class="category">Photography</div>
               </div>
               <div class="text-content">
-                <div class="title">Product Title Goes Here</div>
-                <div class="brand">Brand</div>
+                <div class="title">Sony RX-100</div>
+                <!-- The price div will be pushed to the bottom -->
                 <div class="price">
                   <div class="price-details">
-                    <span class="original-price">RM XX.XX</span>
-                    <span class="sale-price">RM XX.XX</span>
+                    <span class="original-price">RM 700</span>
+                    <span class="sale-price">RM 650</span>
                   </div>
                   <span class="discount">30% OFF</span>
                 </div>
               </div>
             </div>
-
+            
             <div class="card">
-              <div class="image-placeholder">
+              <div class="image-container">
+                <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
                 <div class="category">Photography</div>
               </div>
               <div class="text-content">
-                <div class="title">Product Title Goes Here</div>
-                <div class="brand">Brand</div>
+                <div class="title">Sony RX-100</div>
+                <!-- The price div will be pushed to the bottom -->
                 <div class="price">
                   <div class="price-details">
-                    <span class="original-price">RM XX.XX</span>
-                    <span class="sale-price">RM XX.XX</span>
+                    <span class="original-price">RM 700</span>
+                    <span class="sale-price">RM 650</span>
                   </div>
                   <span class="discount">30% OFF</span>
                 </div>
               </div>
             </div>
-
+            
             <div class="card">
-              <div class="image-placeholder">
+              <div class="image-container">
+                <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
                 <div class="category">Photography</div>
               </div>
               <div class="text-content">
-                <div class="title">Product Title Goes Here</div>
-                <div class="brand">Brand</div>
+                <div class="title">Sony RX-100</div>
+                <!-- The price div will be pushed to the bottom -->
                 <div class="price">
                   <div class="price-details">
-                    <span class="original-price">RM XX.XX</span>
-                    <span class="sale-price">RM XX.XX</span>
+                    <span class="original-price">RM 700</span>
+                    <span class="sale-price">RM 650</span>
                   </div>
                   <span class="discount">30% OFF</span>
                 </div>
               </div>
             </div>
-
+            
             <div class="card">
-              <div class="image-placeholder">
+              <div class="image-container">
+                <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
                 <div class="category">Photography</div>
               </div>
               <div class="text-content">
-                <div class="title">Product Title Goes Here</div>
-                <div class="brand">Brand</div>
+                <div class="title">Sony RX-100</div>
+                <!-- The price div will be pushed to the bottom -->
                 <div class="price">
                   <div class="price-details">
-                    <span class="original-price">RM XX.XX</span>
-                    <span class="sale-price">RM XX.XX</span>
+                    <span class="original-price">RM 700</span>
+                    <span class="sale-price">RM 650</span>
                   </div>
                   <span class="discount">30% OFF</span>
                 </div>
               </div>
             </div>
-
+            
             <div class="card">
-              <div class="image-placeholder">
+              <div class="image-container">
+                <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
                 <div class="category">Photography</div>
               </div>
               <div class="text-content">
-                <div class="title">Product Title Goes Here</div>
-                <div class="brand">Brand</div>
+                <div class="title">Sony RX-100</div>
+                <!-- The price div will be pushed to the bottom -->
                 <div class="price">
                   <div class="price-details">
-                    <span class="original-price">RM XX.XX</span>
-                    <span class="sale-price">RM XX.XX</span>
+                    <span class="original-price">RM 700</span>
+                    <span class="sale-price">RM 650</span>
                   </div>
                   <span class="discount">30% OFF</span>
                 </div>
               </div>
             </div>
-
+            
             <div class="card">
-              <div class="image-placeholder">
+              <div class="image-container">
+                <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
                 <div class="category">Photography</div>
               </div>
               <div class="text-content">
-                <div class="title">Product Title Goes Here</div>
-                <div class="brand">Brand</div>
+                <div class="title">Sony RX-100</div>
+                <!-- The price div will be pushed to the bottom -->
                 <div class="price">
                   <div class="price-details">
-                    <span class="original-price">RM XX.XX</span>
-                    <span class="sale-price">RM XX.XX</span>
+                    <span class="original-price">RM 700</span>
+                    <span class="sale-price">RM 650</span>
                   </div>
                   <span class="discount">30% OFF</span>
                 </div>
               </div>
             </div>
-
+            
             <div class="card">
-              <div class="image-placeholder">
+              <div class="image-container">
+                <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
                 <div class="category">Photography</div>
               </div>
               <div class="text-content">
-                <div class="title">Product Title Goes Here</div>
-                <div class="brand">Brand</div>
+                <div class="title">Sony RX-100</div>
+                <!-- The price div will be pushed to the bottom -->
                 <div class="price">
                   <div class="price-details">
-                    <span class="original-price">RM XX.XX</span>
-                    <span class="sale-price">RM XX.XX</span>
+                    <span class="original-price">RM 700</span>
+                    <span class="sale-price">RM 650</span>
                   </div>
                   <span class="discount">30% OFF</span>
                 </div>
               </div>
             </div>
-
+            
             <div class="card">
-              <div class="image-placeholder">
+              <div class="image-container">
+                <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
                 <div class="category">Photography</div>
               </div>
               <div class="text-content">
-                <div class="title">Product Title Goes Here</div>
-                <div class="brand">Brand</div>
+                <div class="title">Sony RX-100</div>
+                <!-- The price div will be pushed to the bottom -->
                 <div class="price">
                   <div class="price-details">
-                    <span class="original-price">RM XX.XX</span>
-                    <span class="sale-price">RM XX.XX</span>
+                    <span class="original-price">RM 700</span>
+                    <span class="sale-price">RM 650</span>
                   </div>
                   <span class="discount">30% OFF</span>
                 </div>
               </div>
             </div>
-
+            
             <div class="card">
-              <div class="image-placeholder">
+              <div class="image-container">
+                <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
                 <div class="category">Photography</div>
               </div>
               <div class="text-content">
-                <div class="title">Product Title Goes Here</div>
-                <div class="brand">Brand</div>
+                <div class="title">Sony RX-100</div>
+                <!-- The price div will be pushed to the bottom -->
                 <div class="price">
                   <div class="price-details">
-                    <span class="original-price">RM XX.XX</span>
-                    <span class="sale-price">RM XX.XX</span>
+                    <span class="original-price">RM 700</span>
+                    <span class="sale-price">RM 650</span>
                   </div>
                   <span class="discount">30% OFF</span>
                 </div>
               </div>
             </div>
-
+            
             <div class="card">
-              <div class="image-placeholder">
+              <div class="image-container">
+                <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
                 <div class="category">Photography</div>
               </div>
               <div class="text-content">
-                <div class="title">Product Title Goes Here</div>
-                <div class="brand">Brand</div>
+                <div class="title">Sony RX-100</div>
+                <!-- The price div will be pushed to the bottom -->
                 <div class="price">
                   <div class="price-details">
-                    <span class="original-price">RM XX.XX</span>
-                    <span class="sale-price">RM XX.XX</span>
+                    <span class="original-price">RM 700</span>
+                    <span class="sale-price">RM 650</span>
                   </div>
                   <span class="discount">30% OFF</span>
                 </div>
               </div>
             </div>
-
+            
             <div class="card">
-              <div class="image-placeholder">
+              <div class="image-container">
+                <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
                 <div class="category">Photography</div>
               </div>
               <div class="text-content">
-                <div class="title">Product Title Goes Here</div>
-                <div class="brand">Brand</div>
+                <div class="title">Sony RX-100</div>
+                <!-- The price div will be pushed to the bottom -->
                 <div class="price">
                   <div class="price-details">
-                    <span class="original-price">RM XX.XX</span>
-                    <span class="sale-price">RM XX.XX</span>
+                    <span class="original-price">RM 700</span>
+                    <span class="sale-price">RM 650</span>
                   </div>
                   <span class="discount">30% OFF</span>
                 </div>
               </div>
             </div>
-
-            <div class="card">
-              <div class="image-placeholder">
-                <div class="category">Photography</div>
-              </div>
-              <div class="text-content">
-                <div class="title">Product Title Goes Here</div>
-                <div class="brand">Brand</div>
-                <div class="price">
-                  <div class="price-details">
-                    <span class="original-price">RM XX.XX</span>
-                    <span class="sale-price">RM XX.XX</span>
-                  </div>
-                  <span class="discount">30% OFF</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="image-placeholder">
-                <div class="category">Photography</div>
-              </div>
-              <div class="text-content">
-                <div class="title">Product Title Goes Here</div>
-                <div class="brand">Brand</div>
-                <div class="price">
-                  <div class="price-details">
-                    <span class="original-price">RM XX.XX</span>
-                    <span class="sale-price">RM XX.XX</span>
-                  </div>
-                  <span class="discount">30% OFF</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="image-placeholder">
-                <div class="category">Photography</div>
-              </div>
-              <div class="text-content">
-                <div class="title">Product Title Goes Here</div>
-                <div class="brand">Brand</div>
-                <div class="price">
-                  <div class="price-details">
-                    <span class="original-price">RM XX.XX</span>
-                    <span class="sale-price">RM XX.XX</span>
-                  </div>
-                  <span class="discount">30% OFF</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="image-placeholder">
-                <div class="category">Photography</div>
-              </div>
-              <div class="text-content">
-                <div class="title">Product Title Goes Here</div>
-                <div class="brand">Brand</div>
-                <div class="price">
-                  <div class="price-details">
-                    <span class="original-price">RM XX.XX</span>
-                    <span class="sale-price">RM XX.XX</span>
-                  </div>
-                  <span class="discount">30% OFF</span>
-                </div>
-              </div>
-            </div>
+            
 
             <!-- ...repeat for other cards... -->
 
@@ -466,35 +400,34 @@
 
     <script>
 
-      // Function to toggle login dropdown
-      window.toggleLoginDropdown = function () {
-        var loginDropdown = document.getElementById("loginDropdown");
-        if (loginDropdown.style.display === "block") {
-          loginDropdown.style.display = "none";
+          // Function to toggle user dropdown
+          window.toggleUserDropdown = function () {
+        var userDropdown = document.getElementById("userDropdown");
+        if (userDropdown.style.display === "block") {
+          userDropdown.style.display = "none";
         } else {
-          loginDropdown.style.display = "block";
+          userDropdown.style.display = "block";
         }
       }
 
-
-      // Function to close login dropdown
-      function closeLoginDropdown() {
-        var loginDropdown = document.getElementById("loginDropdown");
-        loginDropdown.style.display = "none";
+      // Function to close user dropdown
+      function closeUserDropdown() {
+        var userDropdown = document.getElementById("userDropdown");
+        userDropdown.style.display = "none";
       }
 
       // Initialize dropdown state on page load
       document.addEventListener('DOMContentLoaded', function () {
-        document.getElementById("loginDropdown").style.display = "none";
+        document.getElementById("userDropdown").style.display = "none";
       });
 
-      // Event listener to handle clicks outside the user icon and login dropdown
+      // Event listener to handle clicks outside the user icon and user dropdown
       document.addEventListener('click', function (event) {
         var isClickInsideUserIcon = document.querySelector('.user-icon').contains(event.target);
-        var isClickInsideDropdown = document.getElementById("loginDropdown").contains(event.target);
+        var isClickInsideDropdown = document.getElementById("userDropdown").contains(event.target);
 
         if (!isClickInsideUserIcon && !isClickInsideDropdown) {
-          closeLoginDropdown();
+          closeUserDropdown();
         }
       });
 
@@ -503,7 +436,7 @@
         event.stopPropagation();
       });
 
-
+      
     </script>
 
 </body>

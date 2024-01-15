@@ -1,4 +1,3 @@
-
 /* HEADER STYLE */
 
 body,
@@ -10,36 +9,52 @@ html {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 .header-background {
-  width: 100%; /* Adjust as per the actual width of the header */
-  height: 70px; /* Adjust as per the actual height of the header */
-  background-color: lightgray; /* Match the background color */
-  transition: all 0.3s; /* Smooth transition for sticky effect */
-}
-.header {
-  width: 1100px; /* Adjust as per the actual width of the header */
   width: 100%;
-  height: 70px; /* Adjust as per the actual height of the header */
-  background-color: lightgray; /* Match the background color */
+  /* Adjust as per the actual width of the header */
+  height: 70px;
+  /* Adjust as per the actual height of the header */
+  background-color: lightgray;
+  /* Match the background color */
+  transition: all 0.3s;
+  /* Smooth transition for sticky effect */
+}
+
+.header {
+  width: 1100px;
+  /* Adjust as per the actual width of the header */
+  width: 100%;
+  height: 70px;
+  /* Adjust as per the actual height of the header */
+  background-color: lightgray;
+  /* Match the background color */
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 20px; /* Add padding on the sides */
+  padding: 20px 20px;
+  /* Add padding on the sides */
   margin: auto;
 }
 
 .container {
-  max-width: 100%; /* This prevents any container from being wider than the viewport */
+  max-width: 100%;
+  /* This prevents any container from being wider than the viewport */
 }
 
 .logo {
-  font-size: 24px; /* Adjust the size as needed */
+  font-size: 24px;
+  /* Adjust the size as needed */
   font-weight: bold;
 }
 
 .search-bar input {
-  width: 460px; /* Adjust the width as needed */
+  width: 460px;
+  /* Adjust the width as needed */
   padding: 10px;
   margin: 0 150px;
   border-radius: 1px;
@@ -55,11 +70,13 @@ html {
 
 .user-info .user-icon,
 .user-info .language {
-  margin-left: 20px; /* Space between user and language */
+  margin-left: 20px;
+  /* Space between user and language */
 }
 
 .user-info .language {
-  border-left: 1px solid black; /* Separator line */
+  border-left: 1px solid black;
+  /* Separator line */
   padding-left: 20px;
 }
 
@@ -91,39 +108,59 @@ Add interactivity .search-bar input:focus {
 .header-background,
 .navbar-background {
   position: fixed;
-  top: 0; /* Align at the top */
+  top: 0;
+  /* Align at the top */
   bottom: 0;
   width: 100%;
-  z-index: 10; /* Ensure it stays above other content */
+  z-index: 10;
+  /* Ensure it stays above other content */
 }
 
 /* NAVIGATION BAR */
 .navbar-background {
-  top: 70px; /* Position below the header */
-  width: 100%; /* Adjust as per the actual width of the navigation bar */
-  height: 40px; /* Adjust as per the actual height of the navigation bar */
-  background-color: #f1f1f1; /* Match the background color */
+  top: 70px;
+  /* Position below the header */
+  width: 100%;
+  /* Adjust as per the actual width of the navigation bar */
+  height: 40px;
+  /* Adjust as per the actual height of the navigation bar */
+  background-color: #f1f1f1;
+  /* Match the background color */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  z-index: 5; /* Ensure it stays above other content */
+  z-index: 5;
+  /* Ensure it stays above other content */
 }
 
+
+
 .navbar {
-  width: 100%; /* Ensure navbar spans full width */
-  height: 40px; /* Set a fixed height for your navbar */
-  background-color: #f1f1f1; /* Background color */
-  display:flex; /* Use flexbox to arrange children */
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
-  padding: 0 20px; /* Adjust padding as needed */
-  margin: auto; /* Center the navbar */
+  max-width: 1050px;
+  width: 100%;
+  /* Ensure navbar spans full width */
+  height: 40px;
+  /* Set a fixed height for your navbar */
+  background-color: #f1f1f1;
+  /* Background color */
+  display: flex;
+  /* Use flexbox to arrange children */
+  justify-content: center;
+  /* Center items horizontally */
+  align-items: center;
+  /* Center items vertically */
+  /* padding: 0 20px; */
+  /* Adjust padding as needed */
+  margin: auto;
+  /* Center the navbar */
   text-align: center;
-  z-index: 5; /* Ensure it stays above other content */
+  z-index: 5;
+  /* Ensure it stays above other content */
 }
 
 
 /* Dropdown Styles */
 .dropdown {
-  position: relative; /* Position the dropdown relative to its parent */
+  position: relative;
+  /* Position the dropdown relative to its parent */
   display: inline-block;
   text-align: center;
   vertical-align: top;
@@ -133,10 +170,13 @@ Add interactivity .search-bar input:focus {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  left: 0; /* Align to the left edge of the parent menu item */
-  top: 40px; /* Adjust this value to match the height of your navbar */
-  min-width: 160px; /* Adjust this value to match the width of the menu item if necessary */
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  left: 0;
+  /* Align to the left edge of the parent menu item */
+  top: 40px;
+  /* Adjust this value to match the height of your navbar */
+  min-width: 160px;
+  /* Adjust this value to match the width of the menu item if necessary */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-content a {
@@ -144,7 +184,8 @@ Add interactivity .search-bar input:focus {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left; /* Align text to the left */
+  text-align: left;
+  /* Align text to the left */
 }
 
 .dropdown:hover .dropdown-content {
@@ -155,22 +196,31 @@ Add interactivity .search-bar input:focus {
 .menu-item {
   height: 40px;
   max-width: 150px;
-  font-size: 10px; /* Adjust the size as needed */
+  font-size: 10px;
+  /* Adjust the size as needed */
   color: #000;
-  padding: 10px 12px; /* Adjust the padding as needed */
+  padding: 10px 12px;
+  /* Adjust the padding as needed */
   cursor: pointer;
   /* vertical-align: middle; */
   justify-content: center;
   /* overflow: hidden; */
-  text-overflow:ellipsis;
+  text-overflow: ellipsis;
   text-wrap: nowrap;
+  align-items: center;
+}
+
+.menu-item a{
+  color: #000;
 }
 
 
 /* Align 'ALL CATEGORIES' text to the cente */
 .menu-item.dropdown {
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  justify-content: center;
+  /* Center horizontally */
   /* margin-left: auto; Pushes the special item to the right */
 }
 
@@ -182,22 +232,25 @@ Add interactivity .search-bar input:focus {
   width: auto;
   white-space: nowrap;
   display: flex;
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  justify-content: center;
+  /* Center horizontally */
   /* margin-left: auto;Pushes the special item to the right */
   padding-top: 15px;
-  
+
 }
 
 .menu-item.special:hover {
   font-weight: bold;
   background-color: #333;
   color: #fff;
-  
+
 }
 
 .menu-item:not(.special):hover {
-  background-color: #ddd; /* Hover effect for non-special items */
+  background-color: #ddd;
+  /* Hover effect for non-special items */
 }
 
 /* Ensure that the dropdown arrow is aligned with the text */
@@ -220,9 +273,10 @@ Add interactivity .search-bar input:focus {
 .login-dropdown {
   display: none;
   position: absolute;
-  top: 30px; /* Position right below the user-info */
+  top: 30px;
+  /* Position right below the user-info */
   background-color: white;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   width: 300px;
   padding: 15px;
   border-radius: 5px;
@@ -257,9 +311,12 @@ Add interactivity .search-bar input:focus {
 }
 
 .social-login button {
-  display: flex; /* Uses flexbox for alignment */
-  align-items: center; /* Aligns items vertically */
-  justify-content: center; /*Centers the content horizontally*/
+  display: flex;
+  /* Uses flexbox for alignment */
+  align-items: center;
+  /* Aligns items vertically */
+  justify-content: center;
+  /*Centers the content horizontally*/
   width: 100%;
   padding: 10px;
   margin-right: 4%;
@@ -279,12 +336,52 @@ Add interactivity .search-bar input:focus {
 
 /* Style for Forgot Password and Register Now links */
 .link-text {
-  display: block; /* Makes the link fill the container */
-  text-align: center; /* Centers the text */
-  text-decoration: none; /* Removes the underline from the link */
-  margin: 5px 0; /* Adds space above and below the link */
-  color: #333; /* Sets the text color */
+  display: block;
+  /* Makes the link fill the container */
+  text-align: center;
+  /* Centers the text */
+  text-decoration: none;
+  /* Removes the underline from the link */
+  margin: 5px 0;
+  /* Adds space above and below the link */
+  color: #333;
+  /* Sets the text color */
 }
+
+/* Style for User Image */
+.user-icon img {
+  border-radius: 50%;
+  /* Circular image */
+  object-fit: cover;
+  /* Ensures the image covers the area properly */
+}
+
+/* User Dropdown Styles */
+.user-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  top: 30px;
+  /* Adjust as needed */
+  right: 0;
+  /* Align to the right of the user icon */
+  min-width: 160px;
+  /* Adjust as needed */
+}
+
+.user-dropdown a {
+  color: black;
+  padding: 10px 0;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.user-dropdown a:hover {
+  background-color: #ddd;
+}
+
 
 
 /* Breadcrumb styles */
@@ -305,7 +402,7 @@ Add interactivity .search-bar input:focus {
 .category-title {
   background-color: #fff;
   color: #333;
-  text-align:left;
+  text-align: left;
   margin-left: 150px;
   padding: 8px 0;
   font-size: 30px;
@@ -328,14 +425,224 @@ Add interactivity .search-bar input:focus {
   font-weight: normal;
 }
 
+
+.profile-picture {
+  padding: 20px 0;
+}
+
+.shop-name{
+  margin-bottom: 12px;
+}
+
+
 .profile-picture img {
   display: block;
   margin: 0 auto;
-  width: 150px; /* Adjust as needed */
-  height: 150px; /* Adjust as needed */
+  width: 200px;
+  /* Adjust as needed */
+  height: 200px;
+  /* Adjust as needed */
   border-radius: 50%;
-  background-color: #f2f2f2; /* Placeholder background color if no image is found */
+  background-color: #f2f2f2;
+  /* Placeholder background color if no image is found */
 }
+
+.seller-username {
+  display: block;
+  font-size: 20px;
+  color: #333;
+  background-color: #fff;
+  padding: 5px 5px;
+  border-width: 1px;
+  border-color: #333;
+  border-style: solid;
+  border-radius: 25px;
+  width: 140px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.seller-social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.seller-social-icons i {
+  margin-left: 7px;
+  margin-right: 10px;
+  margin-top: 20px;
+  height: 20px;
+  /* Adjust the size as needed */
+  text-decoration: none;
+  /* Removes underline from links */
+}
+
+.seller-bio{
+  font-size: 22px;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  overflow: hidden; /* Hide overflow to keep everything neat */
+  margin-bottom: 20px;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  position: relative; /* Position relative to allow absolute positioning inside */
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white; /* Change to white for better visibility */
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 99; /* Ensure arrows are above the images and dots */
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "prev button" to the left */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Dot indicators */
+.dot-container {
+  text-align: center;
+  position: absolute;
+  bottom: 8px; /* Place the dots near the bottom of the image */
+  width: 100%;
+  z-index: 1; /* Ensure dots are above the images */
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #ff0000; /* Red for active dot */
+}
+
+
+
+.filter-bar-container {
+  
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.filter-bar {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+}
+
+.filter-label {
+  margin-right: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.filter-option {
+  margin-right: 10px;
+  padding: 10px 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style for the dropdown arrow to match the rest of the filter options */
+.price-filter select {
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 50%;
+  font-size: 16px;
+}
+
+.price-dropdown{
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.price-dropdown option{
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.price-filter select:hover {
+  background-color: #f2f2f2;
+}
+
+
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .filter-bar-container {
+    padding: 10px;
+  }
+
+  .filter-bar {
+    flex-direction: column;
+  }
+
+  .filter-option {
+    margin-bottom: 10px;
+  }
+
+  .price-filter select {
+    width: 100%;
+
+  }
+}
+
+
 
 /* Reviewed Products Section Styles */
 .reviewed-products-section {
@@ -395,6 +702,9 @@ Add interactivity .search-bar input:focus {
 }
 
 .card {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Ensures the price is pushed to the bottom */
   flex: 0 0 20%;
   /* flex-grow: 0, flex-shrink: 0, flex-basis: 25% */
   border: 1px solid #ddd;
@@ -406,12 +716,17 @@ Add interactivity .search-bar input:focus {
   /* Space between rows */
 }
 
-.image-placeholder {
-  background: #eee;
+.image-container {
   width: 100%;
-  height: 250px;
-  /* Fixed height for a square image */
+  height: 250px; /* Adjust height as needed */
   position: relative;
+  overflow: hidden; /* To handle images larger than the container */
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This will ensure the image covers the whole area */
 }
 
 .category {
@@ -427,6 +742,10 @@ Add interactivity .search-bar input:focus {
 
 .text-content {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This will push the price to the bottom */
+  flex-grow: 1; /* Grow to take up available space */
 }
 
 .category,
@@ -532,8 +851,10 @@ Add interactivity .search-bar input:focus {
   bottom: 0;
   margin-top: 43px;
   width: 100%;
-  background-color: #f2f2f2; /* Your desired background color */
-  z-index: 1; /* Ensures the footer is above other content */
+  background-color: #f2f2f2;
+  /* Your desired background color */
+  z-index: 1;
+  /* Ensures the footer is above other content */
   /* height: 300px; */
 }
 
@@ -542,8 +863,10 @@ Add interactivity .search-bar input:focus {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
-  padding: 0 50px; /* Adjust this value to fit your content */
-  min-height: 150px; /* Or whatever height you prefer for your footer */
+  padding: 0 50px;
+  /* Adjust this value to fit your content */
+  min-height: 150px;
+  /* Or whatever height you prefer for your footer */
 }
 
 /* Ensure the very bottom part of the footer, likely with copyright and payment logos, also sticks to the bottom */
@@ -553,17 +876,21 @@ Add interactivity .search-bar input:focus {
   left: 0;
   /* bottom: 0; */
   width: 100%;
-  background-color: white; /* Or any other color */
-  color: black; /* Text color */
+  background-color: white;
+  /* Or any other color */
+  color: black;
+  /* Text color */
   z-index: 1;
   padding: 10px 20px;
-  text-align: center; /* This centers the text horizontally */
+  text-align: center;
+  /* This centers the text horizontally */
   box-sizing: border-box;
 }
 
 /* The following rule will push the .footer-bottom up to sit on top of .footer */
 .footer-bottom {
-  bottom: 0px; /* Adjust this value to the height of your .footer */
+  bottom: 0px;
+  /* Adjust this value to the height of your .footer */
   display: flex;
   justify-content: space-between;
 }
@@ -612,38 +939,50 @@ Add interactivity .search-bar input:focus {
 }
 
 .footer-bottom .payment-logos img {
-  height: 20px; /* Adjust as necessary for your logos */
+  height: 20px;
+  /* Adjust as necessary for your logos */
 }
 
 .social-icons {
   display: flex;
 }
 
-.social-icons i{
+.social-icons i {
   margin-left: 7px;
   margin-right: 10px;
   margin-top: 20px;
-  height: 20px; /* Adjust the size as needed */
-  text-decoration: none; /* Removes underline from links */
+  height: 20px;
+  /* Adjust the size as needed */
+  text-decoration: none;
+  /* Removes underline from links */
 }
 
 .subscribe-container {
-  background-color: #f2f2f2; /* Background color */
-  padding: 20px; /* Padding around the content */
-  width: 300px; /* Width of the subscribe container */
-  box-sizing: border-box; /* Ensures padding doesn't add to the width */
-  border-radius: 5px; /* Rounded corners of the container */
+  background-color: #f2f2f2;
+  /* Background color */
+  padding: 20px;
+  /* Padding around the content */
+  width: 300px;
+  /* Width of the subscribe container */
+  box-sizing: border-box;
+  /* Ensures padding doesn't add to the width */
+  border-radius: 5px;
+  /* Rounded corners of the container */
 }
 
 .subscribe-container h2 {
   text-align: left;
-  font-size: 1.2em; /* Size of the title */
-  margin-bottom: 5px; /* Space between title and paragraph */
+  font-size: 1.2em;
+  /* Size of the title */
+  margin-bottom: 5px;
+  /* Space between title and paragraph */
 }
 
 .subscribe-container p {
-  font-size: 0.9em; /* Size of the paragraph */
-  margin-bottom: 20px; /* Space between paragraph and form */
+  font-size: 0.9em;
+  /* Size of the paragraph */
+  margin-bottom: 20px;
+  /* Space between paragraph and form */
 }
 
 .subscribe-form {
@@ -651,24 +990,34 @@ Add interactivity .search-bar input:focus {
 }
 
 .subscribe-form input[type="email"] {
-  flex-grow: 1; /* Allows input to fill the space */
+  flex-grow: 1;
+  /* Allows input to fill the space */
   padding: 10px;
-  border: none; /* No border for input */
-  margin-right: -1px; /* Overlap border with button */
+  border: none;
+  /* No border for input */
+  margin-right: -1px;
+  /* Overlap border with button */
 }
 
 .subscribe-form button {
-  background-color: red; /* Background color for the button */
-  color: #fff; /* Text color for the button */
-  border: none; /* No border for button */
+  background-color: red;
+  /* Background color for the button */
+  color: #fff;
+  /* Text color for the button */
+  border: none;
+  /* No border for button */
   padding: 10px 20px;
-  cursor: pointer; /* Changes cursor to pointer */
-  border-radius: 0 5px 5px 0; /* Rounded corners on the right side */
+  cursor: pointer;
+  /* Changes cursor to pointer */
+  border-radius: 0 5px 5px 0;
+  /* Rounded corners on the right side */
 }
 
 /* Additional styles for focus and hover states */
 .subscribe-form input[type="email"]:focus,
 .subscribe-form button:hover {
-  outline: none; /* Removes outline on focus */
-  background-color: #333; /* Background color on hover for button */
+  outline: none;
+  /* Removes outline on focus */
+  background-color: #333;
+  /* Background color on hover for button */
 }
