@@ -58,7 +58,9 @@
         <div class="menu-item">MOBILE PHONES &<br />GADGETS</div>
         <div class="menu-item">BEAUTY &<br />PERSONAL CARE</div>
         <div class="menu-item">COMPUTER & TECH</div>
-        <div class="menu-item">PHOTOGRAPHY</div>
+        <div class="menu-item">
+          <a href="Product Page.html">PHOTOGRAPHY</a>
+        </div>
         <div class="menu-item">MOTORBIKES</div>
         <div class="menu-item">CARS</div>
         <div class="menu-item">HOBBIES & TOYS</div>
@@ -73,7 +75,7 @@
       <div class="welcome-section">
         <div class="profile-picture">
           <!-- Replace 'path_to_profile_picture.jpg' with the path to the actual image -->
-          <img src="./images/Seller-profile.png" alt="Profile Picture">
+          <img src="./images/Seller Profile.png" alt="Profile Picture">
         </div>
         <h1 class="shop-name">Good Find</h1>
         <div class="seller-username">
@@ -89,14 +91,62 @@
         </div>
       </div>
 
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Slides -->
+
+        <div class="mySlides fade">
+          <img src="./images/slideshow/my-50009109-7a5f71301101e05640e18bccbd80bb13_xxhdpi.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./images/slideshow/my-50009109-34f7e66f46c9e3b8ae97879fa8fe0c50_xxhdpi.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./images/slideshow/my-50009109-71027b7420cdcd6c34e4578958b2d396_xxhdpi.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./images/slideshow/my-50009109-d10f5ebd7554524b6bfbbb8b1ddb07ec_xxhdpi.jpeg" style="width:100%">
+        </div>
+
+
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+        <!-- The dots/circles -->
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <!-- ... other dots ... -->
+        </div>
+      </div>
+
       <!-- Reviewed Products Section -->
       <div class="reviewed-products-section">
-        <div class="reviewed-products-header">
-          <div class="review-title">
-            <h2>Reviewed Products</h2>
+        <div class="filter-bar-container">
+          <!-- Filter Bar -->
+          <div class="filter-bar">
+            <span class="filter-label">Sort by</span>
+            <button class="filter-option">Relevance</button>
+            <button class="filter-option">Latest</button>
+            <button class="filter-option">Top Sales</button>
+            <!-- <div class="filter-option price-filter"> -->
+              <select name="price" class="price-dropdown">
+                <option value="Relevance">Relevance</option>
+                <option value="low-to-high">Price: Low to High</option>
+                <option value="high-to-low">Price: High to Low</option>
+              </select>
+            </div>
+
           </div>
-          <div class="products-count">Reviewed 69 Products</div>
-          <button class="add-review-btn">ADD NEW REVIEW</button>
+
         </div>
         <!-- <div class="products-container"> -->
         <!-- Main Content Section -->
@@ -119,7 +169,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="card">
             <div class="image-container">
               <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
@@ -137,7 +187,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="card">
             <div class="image-container">
               <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
@@ -155,7 +205,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="card">
             <div class="image-container">
               <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
@@ -173,7 +223,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="card">
             <div class="image-container">
               <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
@@ -191,7 +241,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="card">
             <div class="image-container">
               <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
@@ -209,7 +259,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="card">
             <div class="image-container">
               <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
@@ -227,7 +277,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="card">
             <div class="image-container">
               <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
@@ -245,7 +295,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="card">
             <div class="image-container">
               <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
@@ -263,7 +313,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="card">
             <div class="image-container">
               <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
@@ -281,7 +331,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="card">
             <div class="image-container">
               <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
@@ -299,7 +349,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="card">
             <div class="image-container">
               <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
@@ -317,8 +367,6 @@
               </div>
             </div>
           </div>
-          
-    
 
           <!-- ...repeat for other cards... -->
 
@@ -448,6 +496,41 @@
         event.stopPropagation();
       });
 
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+
+      // Change slide every 3 seconds
+      setInterval(function () {
+        plusSlides(1);
+      }, 4000);
 
     </script>
 
