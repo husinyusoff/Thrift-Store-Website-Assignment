@@ -382,6 +382,19 @@ Add interactivity .search-bar input:focus {
   background-color: #ddd;
 }
 
+.user-dropdown a {
+  color: black;
+  padding: 10px 0;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.user-dropdown a:hover {
+  background-color: #ddd;
+}
+
+
 
 
 /* Breadcrumb styles */

@@ -1,0 +1,112 @@
+   <!-- Main content goes here -->
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+</div>
+<br>
+<br>
+<body>
+<!-- Personal Detail -->
+<div class="form-container">
+    <div class="addprod-container">
+        <h4><b>Add Product</b></h4>
+        <br>
+        <div class="row">
+            <!-- Left Column for category -->
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="category">Select Category</label>
+                        <select class="form-control" style="width: 300px;" id="category">
+                            <option value="Photography">Photography</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Clothing">Clothing</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                        
+                    </div>
+                </form>
+            </div>
+            <!-- Right Column for condition -->
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="condition">Select Condition</label>
+                        <select class="form-control" style="width: 300px;" id="condition">
+                            <option value="Well-used">Well-used</option>
+                            <option value="New">New</option>
+                            <option value="Refurbished">Refurbished</option>
+                            <!-- Add more options as needed -->
+                            
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <p class="centered-sentence">Your have selected <b>"Product Name"</b>.</p>
+            <!-- Left Column for upload image -->
+            
+                <form>
+                    <div class="empty-form">
+                        <label for="image">Upload Image</label>
+                        <input type="textimage" class="form-control" style="width: 300px;" id="image" placeholder="Choose an image">
+       
+                        <label for="video URL">Video URL</label>
+                        <input type="text" class="form-control" style="width: 300px;" id="url" >
+                        <label for="summary">Summary</label>
+                        <input type="text" class="form-control" style="width: 700px;" id="summary" >
+                    </div>
+                </form>
+            </div> 
+            <!-- Button submit-->
+            <br>
+            <button class="submit-button"><b>SUBMIT</b></button>
+        </div>
+    </div>
+</div>
+</body>
+<style>
+.submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    background-color: #020202;
+    color: #f8f5f5;
+    border: black;
+    border-radius: none;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 300px;
+    transition: background-color 0.3s ease;
+  }
+  .submit-button:hover {
+  background-color: #555; /* Change background color on hover */
+  }
+  
+  .submit-button:active {
+  background-color: #888; /* Change background color when pressed */
+  }
+  /* Center the form columns */
+  .form-container {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .centered-sentence {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  </style>
