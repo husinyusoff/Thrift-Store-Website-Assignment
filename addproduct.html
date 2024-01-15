@@ -1,112 +1,287 @@
-   <!-- Main content goes here -->
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
  
-</div>
-<br>
-<br>
-<body>
-<!-- Personal Detail -->
-<div class="form-container">
-    <div class="addprod-container">
-        <h4><b>Add Product</b></h4>
-        <br>
-        <div class="row">
-            <!-- Left Column for category -->
-            <div class="col-md-6">
-                <form>
-                    <div class="form-group">
-                        <label for="category">Select Category</label>
-                        <select class="form-control" style="width: 300px;" id="category">
-                            <option value="Photography">Photography</option>
-                            <option value="Electronics">Electronics</option>
-                            <option value="Clothing">Clothing</option>
-                            <!-- Add more options as needed -->
-                        </select>
-                        
-                    </div>
-                </form>
-            </div>
-            <!-- Right Column for condition -->
-            <div class="col-md-6">
-                <form>
-                    <div class="form-group">
-                        <label for="condition">Select Condition</label>
-                        <select class="form-control" style="width: 300px;" id="condition">
-                            <option value="Well-used">Well-used</option>
-                            <option value="New">New</option>
-                            <option value="Refurbished">Refurbished</option>
-                            <!-- Add more options as needed -->
-                            
-                        </select>
-                    </div>
-                </form>
-            </div>
-            <p class="centered-sentence">Your have selected <b>"Product Name"</b>.</p>
-            <!-- Left Column for upload image -->
-            
-                <form>
-                    <div class="empty-form">
-                        <label for="image">Upload Image</label>
-                        <input type="textimage" class="form-control" style="width: 300px;" id="image" placeholder="Choose an image">
-       
-                        <label for="video URL">Video URL</label>
-                        <input type="text" class="form-control" style="width: 300px;" id="url" >
-                        <label for="summary">Summary</label>
-                        <input type="text" class="form-control" style="width: 700px;" id="summary" >
-                    </div>
-                </form>
-            </div> 
-            <!-- Button submit-->
-            <br>
-            <button class="submit-button"><b>SUBMIT</b></button>
-        </div>
-    </div>
-</div>
-</body>
+</head>
 <style>
-.submit-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 30px;
-    background-color: #020202;
-    color: #f8f5f5;
-    border: black;
-    border-radius: none;
-    font-size: 16px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    cursor: pointer;
-    margin-top: 20px;
-    margin-left: 300px;
-    transition: background-color 0.3s ease;
-  }
-  .submit-button:hover {
-  background-color: #555; /* Change background color on hover */
-  }
-  
-  .submit-button:active {
-  background-color: #888; /* Change background color when pressed */
-  }
-  /* Center the form columns */
-  .form-container {
-    max-width: 600px;
-    margin: auto;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  .centered-sentence {
-    text-align: center;
-    margin-top: 20px;
-  }
+    .addproduct-container {
+      max-width: 600px;
+      margin: auto;
+    }
 
-  </style>
+    /* Style for form rows */
+    .form-row {
+      display: flex;
+      flex-direction:row; /* Change to row */
+      margin-bottom: 15px;
+    }
+
+    /* Style for labels */
+    .form-label {
+      text-align: left; /* Align the labels to the left */
+      margin-right: 10px; /* Add some space between label and input */
+    }
+
+    /* Style for input fields */
+    .form-input {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .choose-container p {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    }
+    #summary{
+    height:100px;
+    }
+    .select-row {
+      display: flex;
+      margin-bottom: 15px;
+      align-items: center;
+  justify-content: center;
+    }
+
+    /* Style for labels */
+    .select-label {
+      flex: 1;
+      text-align: right;
+      padding-right: 10px;
+      line-height: 2; /* Adjust as needed for vertical alignment */
+      font-size: medium;
+    }
+
+    /* Style for input fields */
+    .select-input {
+      flex: 2;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .summary-form {
+      display: flex;
+      margin-bottom: 15px;
+      align-items: center;
+  justify-content: center;
+    }
+    
+</style>
+<body>
+  <!-- Header Section (Placeholder) -->
+  <header>
+    <div class="header-background" id="myHeader">
+      <div class="header">
+        <div class="logo">
+          <img src="4.png" alt="logo" width="180px">
+        </div>
+        <div class="search-bar">
+          <input id="search-bar" type="text" placeholder="Type in and hit Enter" autocomplete="on" />
+        </div>
+        <!-- User Info Section -->
+        <div class="user-info">
+          <span class="user-icon" onclick="toggleUserDropdown()">
+            <img src="Angry Cat.png" alt="User" width="30" height="30"> <!-- Replace with your image path -->
+          </span>
+          <span class="language">ENG</span>
+          <!-- User Dropdown -->
+          <div class="user-dropdown" id="userDropdown">
+            <a href="./User Dashboard.html">My Account</a>
+            <a href="#">My Purchases</a>
+            <a href="./Seller Profile.html">My Shop</a>
+            <a href="./Product Page.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-background">
+      <div class="navbar">
+        <!-- Dropdown Menu Item for ALL CATEGORIES -->
+        <div class="menu-item dropdown">
+          ALL CATEGORIES
+          <div class="dropdown-content">
+            <a href="#">Men's Fashion</a>
+            <a href="#">Women's Fashion</a>
+            <a href="#">Video Games</a>
+            <a href="#">Audio</a>
+            <a href="#">Babies & kids</a>
+            <a href="#">Health & Nutrition</a>
+            <a href="#">Sports Equipment</a>
+            <a href="#">Auto Accessories</a>
+            <a href="#">Pet Supplies</a>
+            <a href="#">Properties</a>
+          </div>
+        </div>
+        <div class="menu-item">MOBILE PHONES &<br />GADGETS</div>
+        <div class="menu-item">BEAUTY &<br />PERSONAL CARE</div>
+        <div class="menu-item">COMPUTER & TECH</div>
+        <div class="menu-item">
+          <a href="Product Page.html">PHOTOGRAPHY</a>
+        </div>
+        <div class="menu-item">MOTORBIKES</div>
+        <div class="menu-item">CARS</div>
+        <div class="menu-item">HOBBIES & TOYS</div>
+        <div class="menu-item">TV & HOME<br />APPLIANCES</div>
+        <div class="menu-item special">SELL WITH US</div>
+      </div>
+    </div>
+
+<!--addproduct-->
+<!-- Add Product Section -->
+<div class="addproduct-container">
+    <h4>Add Product</h4>
+<br>
+<br>
+    <!-- Row 1: Select Category and Select Condition -->
+    <div class="form-row">
+      <label class="form-label" for="category">Select Category:</label>
+      <select class="form-input" id="category">
+        <option value="Photography">Photography</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Clothing">Clothing</option>
+        <!-- Add more options as needed -->
+      </select>
+
+      <label class="form-label" for="condition">Select Condition:</label>
+      <select class="form-input" id="condition">
+        <option value="Well-used">Well-used</option>
+        <option value="New">New</option>
+        <option value="Refurbished">Refurbished</option>
+        <!-- Add more options as needed -->
+      </select>
+    </div>
+<br>
+<div class="choose-container"
+ <p>You have choose <b>"Your Product"</b></p>
+ <br>
+    <!-- Row 2: Other Form Elements -->
+    <div class="form-row">
+      <label class="form-label" for="image">Upload Image:</label>
+      <input class="form-input" type="text" id="image" placeholder="Choose an image">
+    </div>
+
+    <div class="form-row">
+      <label class="form-label" for="video">Video URL:</label>
+      <input class="form-input" type="text" id="video" >
+    </div>
+
+    <div class="form-row">
+      <label class="form-label" for="summary">Summary:</label>
+      <input class="form-input" type="text" id="summary" >
+    </div>
+
+
+<!--footer-->
+ <!-- Footer Section -->
+ <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-section footer-logo">
+        <img src="1.png" alt="Your Logo" width="110px" />
+        <!-- Social Icons -->
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook fa-xl"></i>
+          <i class="fa-brands fa-square-x-twitter fa-xl"></i>
+          <i class="fa-brands fa-square-instagram fa-xl"></i>
+        </div>
+      </div>
+      <!-- Main Pages -->
+      <div class="footer-section">
+        <h3>Main Pages</h3>
+        <ul>
+          <li><a href="#">Sell with Us</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Promos</a></li>
+          <li><a href="#">Become an Ambassador</a></li>
+        </ul>
+      </div>
+      <!-- Policy -->
+      <div class="footer-section">
+        <h3>Policy</h3>
+        <ul>
+          <li><a href="#">Terms of Usage</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li>
+            <a href="#">Return Policy<br /><br /><br /></a>
+          </li>
+        </ul>
+      </div>
+      <!-- Categories -->
+      <div class="footer-section">
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="#">Skincare</a></li>
+          <li><a href="#">Makeup</a></li>
+          <li><a href="#">Hair Care</a></li>
+          <li><a href="#">Bath & Body</a></li>
+          <li><a href="#">Beauty Supplements</a></li>
+        </ul>
+      </div>
+      <!-- Subscribe Section -->
+      <div class="subscribe-container">
+        <h3>Subscribe</h3>
+        <p>
+          Subscribe to our newsletter, so that you can be the first to know
+          about new offers and promotions.
+        </p>
+        <form action="#" method="post" class="subscribe-form">
+          <input type="email" name="email" placeholder="Enter Email Address" required />
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="copy">©ThrifiNity 2023 All Rights Reserved.</div>
+      <div class="payment-logos">
+        <img src="cc-visa.svg" alt="Visa" />
+        <img src="cc-mastercard.svg" alt="MasterCard" />
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+        // Function to toggle user dropdown
+        window.toggleUserDropdown = function () {
+      var userDropdown = document.getElementById("userDropdown");
+      if (userDropdown.style.display === "block") {
+        userDropdown.style.display = "none";
+      } else {
+        userDropdown.style.display = "block";
+      }
+    }
+
+    // Function to close user dropdown
+    function closeUserDropdown() {
+      var userDropdown = document.getElementById("userDropdown");
+      userDropdown.style.display = "none";
+    }
+
+    // Initialize dropdown state on page load
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById("userDropdown").style.display = "none";
+    });
+
+    // Event listener to handle clicks outside the user icon and user dropdown
+    document.addEventListener('click', function (event) {
+      var isClickInsideUserIcon = document.querySelector('.user-icon').contains(event.target);
+      var isClickInsideDropdown = document.getElementById("userDropdown").contains(event.target);
+
+      if (!isClickInsideUserIcon && !isClickInsideDropdown) {
+        closeUserDropdown();
+      }
+    });
+
+    // Prevent event propagation from the user icon to the document
+    document.querySelector('.user-icon').addEventListener('click', function (event) {
+      event.stopPropagation();
+    });
+
+    
+  </script>
+
+</body>
+
+</html>
