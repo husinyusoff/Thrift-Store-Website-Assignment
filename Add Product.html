@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css">
+    <script src="https://kit.fontawesome.com/23d37367c9.js" crossorigin="anonymous"></script>
+    <title>Header & Footer Template</title>
+</head>
+
+<body>
+    <!-- Header Section (Placeholder) -->
+    <header>
+        <div class="header-background" id="myHeader">
+            <div class="header">
+                <div class="logo">
+                    <a href="./Logged-in Page(open product page first).html"">
+                        <img src=" ./Logo/4.png" alt="logo" width="180px">
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <input id="search-bar" type="text" placeholder="Type in and hit Enter" autocomplete="on" />
+                </div>
+                <!-- User Info Section -->
+                <div class="user-info">
+                    <span class="user-icon" onclick="toggleUserDropdown()">
+                        <img src="./images/Angry Cat.png" alt="User" width="30" height="30">
+                        <!-- Replace with your image path -->
+                    </span>
+                    <span class="language">ENG</span>
+                    <!-- User Dropdown -->
+                    <div class="user-dropdown" id="userDropdown">
+                        <a href="./User Dashboard.html">My Account</a>
+                        <a href="#">My Purchases</a>
+                        <a href="./Seller Profile.html">My Shop</a>
+                        <a href="./Homepage.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-background">
+            <div class="navbar">
+                <!-- Dropdown Menu Item for ALL CATEGORIES -->
+                <div class="menu-item dropdown">
+                    ALL CATEGORIES
+                    <div class="dropdown-content">
+                        <a href="#">Men's Fashion</a>
+                        <a href="#">Women's Fashion</a>
+                        <a href="#">Video Games</a>
+                        <a href="#">Audio</a>
+                        <a href="#">Babies & kids</a>
+                        <a href="#">Health & Nutrition</a>
+                        <a href="#">Sports Equipment</a>
+                        <a href="#">Auto Accessories</a>
+                        <a href="#">Pet Supplies</a>
+                        <a href="#">Properties</a>
+                    </div>
+                </div>
+                <div class="menu-item">MOBILE PHONES &<br />GADGETS</div>
+                <div class="menu-item">BEAUTY &<br />PERSONAL CARE</div>
+                <div class="menu-item">COMPUTER & TECH</div>
+                <div class="menu-item">
+                    <a href="Product Page.html">PHOTOGRAPHY</a>
+                </div>
+                <div class="menu-item">MOTORBIKES</div>
+                <div class="menu-item">CARS</div>
+                <div class="menu-item">HOBBIES & TOYS</div>
+                <div class="menu-item">TV & HOME<br />APPLIANCES</div>
+                <div class="menu-item special">SELL WITH US</div>
+            </div>
+        </div>
+
+        <!-- Breadcrumb Section -->
+        <div class="breadcrumb-container">
+            <a href="#" class="breadcrumb-link">Home</a>
+            <span> &gt; </span>
+            <a href="#" class="breadcrumb-link">My Shop</a>
+            <span> &gt; </span>
+            <a href="#" class="breadcrumb-link">Add Product</a>
+        </div>
+
+        <!-- Add Product Section -->
+        <div class="addproduct-container">
+            <div class="addproduct-title">
+                Add Product
+            </div>
+            <!-- Row 1: Select Category and Select Condition -->
+            <div class="form-row">
+                <label class="form-label" for="category">Select Category:</label>
+                <select class="form-input" id="category">
+                    <option value="Photography">Photography</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Clothing">Clothing</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+                <label class="form-label" for="condition">Select Condition:</label>
+                <select class="form-input" id="condition">
+                    <option value="Well-used">Well-used</option>
+                    <option value="New">New</option>
+                    <option value="Refurbished">Refurbished</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <br>
+            <div class="choose-container" <p>You have choose <b>"Your Product"</b></p>
+                <br>
+                <!-- Row 2: Other Form Elements -->
+                <div class="form-row">
+                    <label class="form-label" for="image">Upload Image:</label>
+                    <input class="form-input" type="text" id="image" placeholder="Choose an image">
+                </div>
+
+                <div class="form-row">
+                    <label class="form-label" for="video">Video URL:</label>
+                    <input class="form-input" type="text" id="video">
+                </div>
+
+                <div class="form-row">
+                    <label class="form-label" for="summary">Summary:</label>
+                    <input class="form-input" type="text" id="summary">
+                </div>
+                <div class="reg-form-action">
+                    <button type="submit" class="submit-btn">Add Product</button>
+                </div>
+            </div>
+    </header>
+</body>
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-section footer-logo">
+            <img src="./Logo/1.png" alt="Your Logo" width="110px" />
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook fa-xl"></i>
+                <i class="fa-brands fa-square-x-twitter fa-xl"></i>
+                <i class="fa-brands fa-square-instagram fa-xl"></i>
+            </div>
+        </div>
+        <!-- Main Pages -->
+        <div class="footer-section">
+            <h3>Main Pages</h3>
+            <ul>
+                <li><a href="#">Sell with Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Promos</a></li>
+                <li><a href="#">Become an Ambassador</a></li>
+            </ul>
+        </div>
+        <!-- Policy -->
+        <div class="footer-section">
+            <h3>Policy</h3>
+            <ul>
+                <li><a href="#">Terms of Usage</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li>
+                    <a href="#">Return Policy<br /><br /><br /></a>
+                </li>
+            </ul>
+        </div>
+        <!-- Categories -->
+        <div class="footer-section">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Skincare</a></li>
+                <li><a href="#">Makeup</a></li>
+                <li><a href="#">Hair Care</a></li>
+                <li><a href="#">Bath & Body</a></li>
+                <li><a href="#">Beauty Supplements</a></li>
+            </ul>
+        </div>
+        <!-- Subscribe Section -->
+        <div class="subscribe-container">
+            <h3>Subscribe</h3>
+            <p>
+                Subscribe to our newsletter, so that you can be the first to know
+                about new offers and promotions.
+            </p>
+            <form action="#" method="post" class="subscribe-form">
+                <input type="email" name="email" placeholder="Enter Email Address" required />
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="copy">©ThrifiNity 2023 All Rights Reserved.</div>
+        <div class="payment-logos">
+            <img src="./Logo/cc-visa.svg" alt="Visa" />
+            <img src="./Logo/cc-mastercard.svg" alt="MasterCard" />
+        </div>
+    </div>
+</footer>
+
+<script>
+
+    // Function to toggle user dropdown
+    window.toggleUserDropdown = function () {
+        var userDropdown = document.getElementById("userDropdown");
+        if (userDropdown.style.display === "block") {
+            userDropdown.style.display = "none";
+        } else {
+            userDropdown.style.display = "block";
+        }
+    }
+
+    // Function to close user dropdown
+    function closeUserDropdown() {
+        var userDropdown = document.getElementById("userDropdown");
+        userDropdown.style.display = "none";
+    }
+
+    // Initialize dropdown state on page load
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById("userDropdown").style.display = "none";
+    });
+
+    // Event listener to handle clicks outside the user icon and user dropdown
+    document.addEventListener('click', function (event) {
+        var isClickInsideUserIcon = document.querySelector('.user-icon').contains(event.target);
+        var isClickInsideDropdown = document.getElementById("userDropdown").contains(event.target);
+
+        if (!isClickInsideUserIcon && !isClickInsideDropdown) {
+            closeUserDropdown();
+        }
+    });
+
+    // Prevent event propagation from the user icon to the document
+    document.querySelector('.user-icon').addEventListener('click', function (event) {
+        event.stopPropagation();
+    });
+
+    // Function to change the main image when a thumbnail is hovered over
+    document.querySelectorAll('.thumbnail').forEach(thumbnail => {
+        thumbnail.addEventListener('mouseenter', function () {
+            document.getElementById('main-image').src = this.src;
+            document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+
+    // Navigation buttons functionality
+    let thumbnails = document.querySelectorAll('.thumbnail');
+    let index = 0;
+
+    function setMainImage(index) {
+        let selectedThumbnail = thumbnails[index];
+        document.getElementById('main-image').src = selectedThumbnail.src;
+        thumbnails.forEach(thumb => thumb.classList.remove('active'));
+        selectedThumbnail.classList.add('active');
+    }
+
+    document.querySelector('.prev').addEventListener('click', () => {
+        if (index > 0) {
+            index--;
+        } else {
+            index = thumbnails.length - 1;
+        }
+        setMainImage(index);
+    });
+
+    document.querySelector('.next').addEventListener('click', () => {
+        if (index < thumbnails.length - 1) {
+            index++;
+        } else {
+            index = 0;
+        }
+        setMainImage(index);
+    });
+
+
+    const slider = document.getElementById('grab-scroll');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('grabbing');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('grabbing');
+    });
+
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('grabbing');
+    });
+
+    slider.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 2; // The number 2 determines how fast the scroll is
+        slider.scrollLeft = scrollLeft - walk;
+    });
+
+    document.querySelector('.chat-icon').addEventListener('click', function () {
+        this.classList.toggle('active');
+        var chatbox = document.querySelector('.chatbox');
+        if (this.classList.contains('active')) {
+            chatbox.style.display = 'block';
+            chatbox.style.bottom = '80px'; /* Adjust as necessary */
+        } else {
+            chatbox.style.display = 'none';
+            chatbox.style.bottom = '80px'; /* Adjust as necessary */
+        }
+    });
+
+
+    document.getElementById('chatWithSeller').addEventListener('click', function () {
+        var chatbox = document.querySelector('.chatbox');
+        chatbox.style.display = 'block';
+    });
+</script>
+
+</body>
+
+</html>

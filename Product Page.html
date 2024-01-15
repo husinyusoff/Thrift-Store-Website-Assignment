@@ -11,43 +11,30 @@
 </head>
 
 <body>
-  <!-- Header Section (Placeholder) -->
-  <header>
+   <!-- Header Section (Placeholder) -->
+   <header>
     <div class="header-background" id="myHeader">
       <div class="header">
         <div class="logo">
-          <img src="./Logo/4.png" alt="logo" width="180px">
-        </div>
+          <a href="Homepage.html">
+              <img src="./Logo/4.png" alt="logo" width="180px">
+          </a>
+      </div>      
         <div class="search-bar">
           <input id="search-bar" type="text" placeholder="Type in and hit Enter" autocomplete="on" />
         </div>
+        <!-- User Info Section -->
         <div class="user-info">
-          <span class="user-icon" onclick="toggleLoginDropdown()">
-            <i class="fa-solid fa-user fa-xl"></i>
+          <span class="user-icon" onclick="toggleUserDropdown()">
+            <img src="./images/Angry Cat.png" alt="User" width="30" height="30"> <!-- Replace with your image path -->
           </span>
           <span class="language">ENG</span>
-          <!-- Login Dropdown Form -->
-          <div class="login-dropdown" id="loginDropdown">
-            <!-- Login Form -->
-            <form class="login-form">
-              <input type="text" placeholder="Email" name="email" autocomplete="email" required />
-              <input type="password" placeholder="Password" name="password" autocomplete="current-password" required />
-              <button type="submit">Sign In</button>
-              <a href="#" class="link-text">Forgot Password?</a>
-              <div class="social-login">
-                <button type="button" class="social-button facebook-button">
-                  <i class="fa-brands fa-square-facebook fa-xl" style="margin-right: 5px;"></i>
-                  Login with Facebook
-                </button>
-                <a href="./Logged-in Page(open product page first).html"> <!-- Add the path to your target HTML file here -->
-                  <button type="button" class="social-button google-button">
-                      <i class="fa-brands fa-google fa-xl" style="margin-right: 5px;"></i>
-                      Login with Google
-                  </button>
-              </a>
-              </div>
-              <a href="#" class="link-text">Register Now</a>
-            </form>
+          <!-- User Dropdown -->
+          <div class="user-dropdown" id="userDropdown">
+            <a href="./User Dashboard.html">My Account</a>
+            <a href="#">My Purchases</a>
+            <a href="./Seller Profile.html">My Shop</a>
+            <a href="./Product Page.html">Logout</a>
           </div>
         </div>
       </div>
@@ -101,18 +88,57 @@
     <!-- Main Content Section -->
     <div class="grid-container">
       <!-- Repeat this block for each card, total of 16 times -->
+      <a href="Product Detail Page.html" class="card-link">
+        <div class="card">
+            <div class="image-container">
+                <img src="./images/product image/1. Sony a6500 Mirrorless Camera(RM2580)/1.jpg" alt="Product Image" class="product-image" />
+                <div class="category">Photography</div>
+            </div>
+            <div class="text-content">
+                <div class="title">CANON EOS M50 CAMERA</div>
+                <!-- The price div will be pushed to the bottom -->
+                <div class="price">
+                    <div class="price-details">
+                        <span class="original-price">RM 2499</span>
+                        <span class="sale-price">RM 1899</span>
+                    </div>
+                    <span class="discount">30% OFF</span>
+                </div>
+            </div>
+        </div>
+    </a>
+
+
       <div class="card">
         <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+          <img src="./images/product image/2. Kyocera Zoomtec wide film camera(Rm342)/1.jpg" alt="Product Image" class="product-image" />
           <div class="category">Photography</div>
         </div>
         <div class="text-content">
-          <div class="title">Sony RX-100</div>
+          <div class="title">Kyocera Zoomtec wide film camera</div>
           <!-- The price div will be pushed to the bottom -->
           <div class="price">
             <div class="price-details">
               <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
+              <span class="sale-price">RM 342</span>
+            </div>
+            <span class="discount">50% OFF</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="image-container">
+          <img src="./images/product image/3. DEFECT CCD DIGITAL CAMERA (RM350)/1.jpg" alt="Product Image" class="product-image" />
+          <div class="category">Photography</div>
+        </div>
+        <div class="text-content">
+          <div class="title">DEFECT CCD DIGITAL CAMERA</div>
+          <!-- The price div will be pushed to the bottom -->
+          <div class="price">
+            <div class="price-details">
+              <span class="original-price">RM 500</span>
+              <span class="sale-price">RM 350</span>
             </div>
             <span class="discount">30% OFF</span>
           </div>
@@ -121,16 +147,16 @@
       
       <div class="card">
         <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+          <img src="./images/product image/4. Digital camera(RM190)/1.jpg" alt="Product Image" class="product-image" />
           <div class="category">Photography</div>
         </div>
         <div class="text-content">
-          <div class="title">Sony RX-100</div>
+          <div class="title">Digital camera</div>
           <!-- The price div will be pushed to the bottom -->
           <div class="price">
             <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
+              <span class="original-price">RM 300</span>
+              <span class="sale-price">RM 190</span>
             </div>
             <span class="discount">30% OFF</span>
           </div>
@@ -139,7 +165,7 @@
       
       <div class="card">
         <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+          <img src="./images/product image/5. Kodak Easyshare MD41 CCD Digital Camera(RM300)/1.jpg" alt="Product Image" class="product-image" />
           <div class="category">Photography</div>
         </div>
         <div class="text-content">
@@ -147,8 +173,8 @@
           <!-- The price div will be pushed to the bottom -->
           <div class="price">
             <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
+              <span class="original-price">400</span>
+              <span class="sale-price">RM 300</span>
             </div>
             <span class="discount">30% OFF</span>
           </div>
@@ -157,16 +183,16 @@
       
       <div class="card">
         <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+          <img src="./images/product image/6. Nikon F3HP Film Camera 35mm(RM1350)/1.jpg" alt="Product Image" class="product-image" />
           <div class="category">Photography</div>
         </div>
         <div class="text-content">
-          <div class="title">Sony RX-100</div>
+          <div class="title">Nikon F3HP Film Camera 35mm</div>
           <!-- The price div will be pushed to the bottom -->
           <div class="price">
             <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
+              <span class="original-price">RM 1550</span>
+              <span class="sale-price">RM 1350</span>
             </div>
             <span class="discount">30% OFF</span>
           </div>
@@ -175,16 +201,16 @@
       
       <div class="card">
         <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+          <img src="./images/product image/7. Canon eos 750D(RM1580)/1.jpg" alt="Product Image" class="product-image" />
           <div class="category">Photography</div>
         </div>
         <div class="text-content">
-          <div class="title">Sony RX-100</div>
+          <div class="title">Canon eos 750D</div>
           <!-- The price div will be pushed to the bottom -->
           <div class="price">
             <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
+              <span class="original-price">RM 1800</span>
+              <span class="sale-price">RM 1580</span>
             </div>
             <span class="discount">30% OFF</span>
           </div>
@@ -193,16 +219,16 @@
       
       <div class="card">
         <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+          <img src="./images/product image/8. ccd casio exilim ex-z500 digital camera(RM380)/1.jpg" alt="Product Image" class="product-image" />
           <div class="category">Photography</div>
         </div>
         <div class="text-content">
-          <div class="title">Sony RX-100</div>
+          <div class="title">ccd casio exilim ex-z500 digital camera</div>
           <!-- The price div will be pushed to the bottom -->
           <div class="price">
             <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
+              <span class="original-price">RM 499</span>
+              <span class="sale-price">RM 380</span>
             </div>
             <span class="discount">30% OFF</span>
           </div>
@@ -211,16 +237,16 @@
       
       <div class="card">
         <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+          <img src="./images/product image/9. MINOLTA MAXXUM 7000 SLR CAMERA(RM250)/1.jpg" alt="Product Image" class="product-image" />
           <div class="category">Photography</div>
         </div>
         <div class="text-content">
-          <div class="title">Sony RX-100</div>
+          <div class="title">MINOLTA MAXXUM 7000 CAMERA</div>
           <!-- The price div will be pushed to the bottom -->
           <div class="price">
             <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
+              <span class="original-price">RM 399</span>
+              <span class="sale-price">RM 250</span>
             </div>
             <span class="discount">30% OFF</span>
           </div>
@@ -229,16 +255,16 @@
       
       <div class="card">
         <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+          <img src="./images/product image/10. Olympus vg140 ccd digicam digital camera(RM310)/1.jpg" alt="Product Image" class="product-image" />
           <div class="category">Photography</div>
         </div>
         <div class="text-content">
-          <div class="title">Sony RX-100</div>
+          <div class="title">Olympus vg140 ccd camera</div>
           <!-- The price div will be pushed to the bottom -->
           <div class="price">
             <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
+              <span class="original-price">RM 420</span>
+              <span class="sale-price">RM 310</span>
             </div>
             <span class="discount">30% OFF</span>
           </div>
@@ -247,16 +273,16 @@
       
       <div class="card">
         <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+          <img src="./images/product image/11. Faulty Porst 135L 35mm Vintage Film Camera(RM50)/1.jpg" alt="Product Image" class="product-image" />
           <div class="category">Photography</div>
         </div>
         <div class="text-content">
-          <div class="title">Sony RX-100</div>
+          <div class="title">Faulty Porst 35mm Vintage Camera</div>
           <!-- The price div will be pushed to the bottom -->
           <div class="price">
             <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
+              <span class="original-price">RM 80</span>
+              <span class="sale-price">RM 50</span>
             </div>
             <span class="discount">30% OFF</span>
           </div>
@@ -265,52 +291,16 @@
       
       <div class="card">
         <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+          <img src="./images/product image/12. Nikon D7200 DSLR Camera(RM1980)/1.jpg" alt="Product Image" class="product-image" />
           <div class="category">Photography</div>
         </div>
         <div class="text-content">
-          <div class="title">Sony RX-100</div>
+          <div class="title">Nikon D7200 DSLR Camera</div>
           <!-- The price div will be pushed to the bottom -->
           <div class="price">
             <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
-            </div>
-            <span class="discount">30% OFF</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="card">
-        <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
-          <div class="category">Photography</div>
-        </div>
-        <div class="text-content">
-          <div class="title">Sony RX-100</div>
-          <!-- The price div will be pushed to the bottom -->
-          <div class="price">
-            <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
-            </div>
-            <span class="discount">30% OFF</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="card">
-        <div class="image-container">
-          <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
-          <div class="category">Photography</div>
-        </div>
-        <div class="text-content">
-          <div class="title">Sony RX-100</div>
-          <!-- The price div will be pushed to the bottom -->
-          <div class="price">
-            <div class="price-details">
-              <span class="original-price">RM 700</span>
-              <span class="sale-price">RM 650</span>
+              <span class="original-price">RM 2299</span>
+              <span class="sale-price">RM 1980</span>
             </div>
             <span class="discount">30% OFF</span>
           </div>
@@ -406,35 +396,34 @@
 
     <script>
 
-      // Function to toggle login dropdown
-      window.toggleLoginDropdown = function () {
-        var loginDropdown = document.getElementById("loginDropdown");
-        if (loginDropdown.style.display === "block") {
-          loginDropdown.style.display = "none";
+     // Function to toggle user dropdown
+     window.toggleUserDropdown = function () {
+        var userDropdown = document.getElementById("userDropdown");
+        if (userDropdown.style.display === "block") {
+          userDropdown.style.display = "none";
         } else {
-          loginDropdown.style.display = "block";
+          userDropdown.style.display = "block";
         }
       }
 
-
-      // Function to close login dropdown
-      function closeLoginDropdown() {
-        var loginDropdown = document.getElementById("loginDropdown");
-        loginDropdown.style.display = "none";
+      // Function to close user dropdown
+      function closeUserDropdown() {
+        var userDropdown = document.getElementById("userDropdown");
+        userDropdown.style.display = "none";
       }
 
       // Initialize dropdown state on page load
       document.addEventListener('DOMContentLoaded', function () {
-        document.getElementById("loginDropdown").style.display = "none";
+        document.getElementById("userDropdown").style.display = "none";
       });
 
-      // Event listener to handle clicks outside the user icon and login dropdown
+      // Event listener to handle clicks outside the user icon and user dropdown
       document.addEventListener('click', function (event) {
         var isClickInsideUserIcon = document.querySelector('.user-icon').contains(event.target);
-        var isClickInsideDropdown = document.getElementById("loginDropdown").contains(event.target);
+        var isClickInsideDropdown = document.getElementById("userDropdown").contains(event.target);
 
         if (!isClickInsideUserIcon && !isClickInsideDropdown) {
-          closeLoginDropdown();
+          closeUserDropdown();
         }
       });
 
@@ -442,7 +431,6 @@
       document.querySelector('.user-icon').addEventListener('click', function (event) {
         event.stopPropagation();
       });
-
 
     </script>
 

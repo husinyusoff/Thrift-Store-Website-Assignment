@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css">
+    <script src="https://kit.fontawesome.com/23d37367c9.js" crossorigin="anonymous"></script>
+    <title>Header & Footer Template</title>
+</head>
+
+<body>
+    <!-- Header Section (Placeholder) -->
+    <header>
+        <div class="header-background" id="myHeader">
+            <div class="header">
+                <div class="logo">
+                    <a href="./Logged-in Page(open product page first).html"">
+                        <img src="./Logo/4.png" alt="logo" width="180px">
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <input id="search-bar" type="text" placeholder="Type in and hit Enter" autocomplete="on" />
+                </div>
+                <!-- User Info Section -->
+                <div class="user-info">
+                    <span class="user-icon" onclick="toggleUserDropdown()">
+                        <img src="./images/Angry Cat.png" alt="User" width="30" height="30">
+                        <!-- Replace with your image path -->
+                    </span>
+                    <span class="language">ENG</span>
+                    <!-- User Dropdown -->
+                    <div class="user-dropdown" id="userDropdown">
+                        <a href="./User Dashboard.html">My Account</a>
+                        <a href="#">My Purchases</a>
+                        <a href="./Seller Profile.html">My Shop</a>
+                        <a href="./Homepage.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-background">
+            <div class="navbar">
+                <!-- Dropdown Menu Item for ALL CATEGORIES -->
+                <div class="menu-item dropdown">
+                    ALL CATEGORIES
+                    <div class="dropdown-content">
+                        <a href="#">Men's Fashion</a>
+                        <a href="#">Women's Fashion</a>
+                        <a href="#">Video Games</a>
+                        <a href="#">Audio</a>
+                        <a href="#">Babies & kids</a>
+                        <a href="#">Health & Nutrition</a>
+                        <a href="#">Sports Equipment</a>
+                        <a href="#">Auto Accessories</a>
+                        <a href="#">Pet Supplies</a>
+                        <a href="#">Properties</a>
+                    </div>
+                </div>
+                <div class="menu-item">MOBILE PHONES &<br />GADGETS</div>
+                <div class="menu-item">BEAUTY &<br />PERSONAL CARE</div>
+                <div class="menu-item">COMPUTER & TECH</div>
+                <div class="menu-item">
+                    <a href="Product Page.html">PHOTOGRAPHY</a>
+                </div>
+                <div class="menu-item">MOTORBIKES</div>
+                <div class="menu-item">CARS</div>
+                <div class="menu-item">HOBBIES & TOYS</div>
+                <div class="menu-item">TV & HOME<br />APPLIANCES</div>
+                <div class="menu-item special">SELL WITH US</div>
+            </div>
+        </div>
+
+        <!-- Breadcrumb Section -->
+        <div class="breadcrumb-container">
+            <a href="#" class="breadcrumb-link">Home</a>
+            <span> &gt; </span>
+            <a href="#" class="breadcrumb-link">Photography</a>
+            <span> &gt; </span>
+            <a href="#" class="breadcrumb-link">Brand</a>
+            <span> &gt; </span>
+            <a href="#" class="breadcrumb-link">Product Name</a>
+        </div>
+
+
+        <!-- Product Section Container -->
+        <div class="product-section">
+            <!-- Image Gallery Placeholder -->
+            <div class="product-section__gallery">
+                <!-- Image gallery content goes here -->
+                <!-- Product Image Gallery Container -->
+                <div class="product-gallery">
+                    <!-- Thumbnails -->
+                    <div class="thumbnail-container">
+                        <img class="thumbnail active" src="./images/product image/1. Sony a6500 Mirrorless Camera(RM2580)/1(2).jpg" alt="Image 1">
+                        <img class="thumbnail" src="./images/product image/1. Sony a6500 Mirrorless Camera(RM2580)/2.jpg" alt="Image 2">
+                        <img class="thumbnail" src="./images/product image/1. Sony a6500 Mirrorless Camera(RM2580)/3.jpg" alt="Image 3">
+                        <img class="thumbnail" src="./images/product image/1. Sony a6500 Mirrorless Camera(RM2580)/4.jpg" alt="Image 3">
+                        <!-- Add more thumbnails if needed -->
+                    </div>
+
+                    <!-- Main Image -->
+                    <div class="main-image-container">
+                        <img id="main-image" src="./images/product image/1. Sony a6500 Mirrorless Camera(RM2580)/1.jpg" alt="Main Product Image">
+                        <button class="nav-button prev">&#10094;</button>
+                        <button class="nav-button next">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-details">
+                <div class="product-header">
+                    <h1 class="product-title">Product Name Goes Here</h1>
+                    <div class="add-to-favourites">
+                        <span class="favourite-icon">&#10084;</span>
+                        <!-- This is a text-based placeholder for a heart icon -->
+                        <span>Add to Favourites</span>
+                    </div>
+                </div>
+                <div class="product-body">
+                    <p class="product-description">
+                        ingin melepaskan camera kesayangan. camera
+                        <a href="#">Read More</a>
+                    </p>
+                    <div class="product-pricing">
+                        <span class="price-old">RM 2499</span>
+                        <span class="price-new">RM 1899</span>
+                        <span class="discount">30% Off</span>
+                    </div>
+                </div>
+                <div class="product-actions">
+                    <button class="action-btn chat" id="chatWithSeller">CHAT WITH SELLER</button>
+                    <button class="action-btn offer">MAKE OFFER</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="seller-container">
+            <div class="seller-section__profile">
+                <a href="Seller Profile.html">
+                    <img class="seller-section__avatar" src="./images/Seller Profile.png" alt="Seller Avatar">
+                </a>
+                <div class="seller-section__info">
+                    <h2 class="seller-section__name">SecretStudyLab</h2>
+                    <p class="seller-section__status">Active 2 Hours Ago</p>
+                    <div class="seller-section__actions">
+                        <button class="seller-section__button">Chat Now</button>
+                        <button class="seller-section__button">View Shop</button>
+                    </div>
+                </div>
+            </div>
+            <div class="seller-section__stats">
+                <div class="seller-section__stat">
+                    <span class="seller-section__stat-value">504</span>
+                    <span class="seller-section__stat-label">Ratings</span>
+                </div>
+                <div class="seller-section__stat">
+                    <span class="seller-section__stat-value">6</span>
+                    <span class="seller-section__stat-label">Products</span>
+                </div>
+                <!-- Additional stats here -->
+            </div>
+        </div>
+
+
+        <div class="product-info-container">
+            <h2 class="product-info-title">Product Details</h2>
+            <pre class="product-info-text" id="custom-pre">
+Barang masih baru,Pakai xsampai setahun
+kalau berminat boleh pm. Boleh nego tipis2
+                <!-- More text -->
+            </pre>
+            <h3 class="product-info-subtitle">Meet-up Point</h3>
+            <pre class="product-info-text" id="custom-pre">
+Area Kuala Terengganu & Marang. Jauh Boleh Post.
+            </pre>
+        </div>
+
+        <div class="related-products-title-container">
+            <h2 class="related-products-title">Related Products</h2>
+        </div>
+
+        <!-- Scrollable Container -->
+        <div class="scrollable-container" id="grab-scroll">
+            <!-- Related Products Container -->
+
+
+            <div class="card scrollable-card-gap">
+                <div class="image-container">
+                    <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+                    <div class="category">Photography</div>
+                </div>
+                <div class="text-content">
+                    <div class="title">Sony RX-100</div>
+                    <!-- The price div will be pushed to the bottom -->
+                    <div class="price">
+                        <div class="price-details">
+                            <span class="original-price">RM 700</span>
+                            <span class="sale-price">RM 650</span>
+                        </div>
+                        <span class="discount">30% OFF</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card scrollable-card-gap">
+                <div class="image-container">
+                    <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+                    <div class="category">Photography</div>
+                </div>
+                <div class="text-content">
+                    <div class="title">Sony RX-100</div>
+                    <!-- The price div will be pushed to the bottom -->
+                    <div class="price">
+                        <div class="price-details">
+                            <span class="original-price">RM 700</span>
+                            <span class="sale-price">RM 650</span>
+                        </div>
+                        <span class="discount">30% OFF</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card scrollable-card-gap">
+                <div class="image-container">
+                    <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+                    <div class="category">Photography</div>
+                </div>
+                <div class="text-content">
+                    <div class="title">Sony RX-100</div>
+                    <!-- The price div will be pushed to the bottom -->
+                    <div class="price">
+                        <div class="price-details">
+                            <span class="original-price">RM 700</span>
+                            <span class="sale-price">RM 650</span>
+                        </div>
+                        <span class="discount">30% OFF</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card scrollable-card-gap">
+                <div class="image-container">
+                    <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+                    <div class="category">Photography</div>
+                </div>
+                <div class="text-content">
+                    <div class="title">Sony RX-100</div>
+                    <!-- The price div will be pushed to the bottom -->
+                    <div class="price">
+                        <div class="price-details">
+                            <span class="original-price">RM 700</span>
+                            <span class="sale-price">RM 650</span>
+                        </div>
+                        <span class="discount">30% OFF</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card scrollable-card-gap">
+                <div class="image-container">
+                    <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+                    <div class="category">Photography</div>
+                </div>
+                <div class="text-content">
+                    <div class="title">Sony RX-100</div>
+                    <!-- The price div will be pushed to the bottom -->
+                    <div class="price">
+                        <div class="price-details">
+                            <span class="original-price">RM 700</span>
+                            <span class="sale-price">RM 650</span>
+                        </div>
+                        <span class="discount">30% OFF</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card scrollable-card-gap">
+                <div class="image-container">
+                    <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+                    <div class="category">Photography</div>
+                </div>
+                <div class="text-content">
+                    <div class="title">Sony RX-100</div>
+                    <!-- The price div will be pushed to the bottom -->
+                    <div class="price">
+                        <div class="price-details">
+                            <span class="original-price">RM 700</span>
+                            <span class="sale-price">RM 650</span>
+                        </div>
+                        <span class="discount">30% OFF</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card scrollable-card-gap">
+                <div class="image-container">
+                    <img src="./images/Angry Cat.png" alt="Product Image" class="product-image" />
+                    <div class="category">Photography</div>
+                </div>
+                <div class="text-content">
+                    <div class="title">Sony RX-100</div>
+                    <!-- The price div will be pushed to the bottom -->
+                    <div class="price">
+                        <div class="price-details">
+                            <span class="original-price">RM 700</span>
+                            <span class="sale-price">RM 650</span>
+                        </div>
+                        <span class="discount">30% OFF</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Repeat for all cards -->
+        </div>
+
+        <div class="chat-icon" onclick="toggleChat()">
+            <i class="fa fa-comment"></i> <!-- FontAwesome chat icon -->
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="chat-container">
+            <div class="chatbox">
+                <div class="chat-area">
+                    <div class="message receiver">
+                        <div class="tail"></div>
+                        Hi there! Is this product still available? If it is when can we meet?
+                    </div>
+                    <div class="message sender">
+                        <div class="tail"></div>
+                        Hello! Yes, it is still available. I'm available between 10 am and 10 pm. Maybe around Thursday,
+                        5 pm?
+                    </div>
+                    <div class="message receiver">
+                        <div class="tail"></div>
+                        Sure! Sounds great. See you on Thursday.
+                    </div>
+                    <!-- Add more messages as needed -->
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Type your message...">
+                    <button>Send</button>
+                </div>
+            </div>
+            <!-- Add other content between the header and footer if needed -->
+        </div>
+
+
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="footer-section footer-logo">
+                    <img src="./Logo/1.png" alt="Your Logo" width="110px" />
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook fa-xl"></i>
+                        <i class="fa-brands fa-square-x-twitter fa-xl"></i>
+                        <i class="fa-brands fa-square-instagram fa-xl"></i>
+                    </div>
+                </div>
+                <!-- Main Pages -->
+                <div class="footer-section">
+                    <h3>Main Pages</h3>
+                    <ul>
+                        <li><a href="#">Sell with Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Promos</a></li>
+                        <li><a href="#">Become an Ambassador</a></li>
+                    </ul>
+                </div>
+                <!-- Policy -->
+                <div class="footer-section">
+                    <h3>Policy</h3>
+                    <ul>
+                        <li><a href="#">Terms of Usage</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li>
+                            <a href="#">Return Policy<br /><br /><br /></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Categories -->
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Skincare</a></li>
+                        <li><a href="#">Makeup</a></li>
+                        <li><a href="#">Hair Care</a></li>
+                        <li><a href="#">Bath & Body</a></li>
+                        <li><a href="#">Beauty Supplements</a></li>
+                    </ul>
+                </div>
+                <!-- Subscribe Section -->
+                <div class="subscribe-container">
+                    <h3>Subscribe</h3>
+                    <p>
+                        Subscribe to our newsletter, so that you can be the first to know
+                        about new offers and promotions.
+                    </p>
+                    <form action="#" method="post" class="subscribe-form">
+                        <input type="email" name="email" placeholder="Enter Email Address" required />
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copy">©ThrifiNity 2023 All Rights Reserved.</div>
+                <div class="payment-logos">
+                    <img src="./Logo/cc-visa.svg" alt="Visa" />
+                    <img src="./Logo/cc-mastercard.svg" alt="MasterCard" />
+                </div>
+            </div>
+        </footer>
+
+        <script>
+
+            // Function to toggle user dropdown
+            window.toggleUserDropdown = function () {
+                var userDropdown = document.getElementById("userDropdown");
+                if (userDropdown.style.display === "block") {
+                    userDropdown.style.display = "none";
+                } else {
+                    userDropdown.style.display = "block";
+                }
+            }
+
+            // Function to close user dropdown
+            function closeUserDropdown() {
+                var userDropdown = document.getElementById("userDropdown");
+                userDropdown.style.display = "none";
+            }
+
+            // Initialize dropdown state on page load
+            document.addEventListener('DOMContentLoaded', function () {
+                document.getElementById("userDropdown").style.display = "none";
+            });
+
+            // Event listener to handle clicks outside the user icon and user dropdown
+            document.addEventListener('click', function (event) {
+                var isClickInsideUserIcon = document.querySelector('.user-icon').contains(event.target);
+                var isClickInsideDropdown = document.getElementById("userDropdown").contains(event.target);
+
+                if (!isClickInsideUserIcon && !isClickInsideDropdown) {
+                    closeUserDropdown();
+                }
+            });
+
+            // Prevent event propagation from the user icon to the document
+            document.querySelector('.user-icon').addEventListener('click', function (event) {
+                event.stopPropagation();
+            });
+
+            // Function to change the main image when a thumbnail is hovered over
+            document.querySelectorAll('.thumbnail').forEach(thumbnail => {
+                thumbnail.addEventListener('mouseenter', function () {
+                    document.getElementById('main-image').src = this.src;
+                    document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+
+            // Navigation buttons functionality
+            let thumbnails = document.querySelectorAll('.thumbnail');
+            let index = 0;
+
+            function setMainImage(index) {
+                let selectedThumbnail = thumbnails[index];
+                document.getElementById('main-image').src = selectedThumbnail.src;
+                thumbnails.forEach(thumb => thumb.classList.remove('active'));
+                selectedThumbnail.classList.add('active');
+            }
+
+            document.querySelector('.prev').addEventListener('click', () => {
+                if (index > 0) {
+                    index--;
+                } else {
+                    index = thumbnails.length - 1;
+                }
+                setMainImage(index);
+            });
+
+            document.querySelector('.next').addEventListener('click', () => {
+                if (index < thumbnails.length - 1) {
+                    index++;
+                } else {
+                    index = 0;
+                }
+                setMainImage(index);
+            });
+
+
+            const slider = document.getElementById('grab-scroll');
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            slider.addEventListener('mousedown', (e) => {
+                isDown = true;
+                slider.classList.add('grabbing');
+                startX = e.pageX - slider.offsetLeft;
+                scrollLeft = slider.scrollLeft;
+            });
+
+            slider.addEventListener('mouseleave', () => {
+                isDown = false;
+                slider.classList.remove('grabbing');
+            });
+
+            slider.addEventListener('mouseup', () => {
+                isDown = false;
+                slider.classList.remove('grabbing');
+            });
+
+            slider.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - slider.offsetLeft;
+                const walk = (x - startX) * 2; // The number 2 determines how fast the scroll is
+                slider.scrollLeft = scrollLeft - walk;
+            });
+
+            document.querySelector('.chat-icon').addEventListener('click', function () {
+                this.classList.toggle('active');
+                var chatbox = document.querySelector('.chatbox');
+                if (this.classList.contains('active')) {
+                    chatbox.style.display = 'block';
+                    chatbox.style.bottom = '80px'; /* Adjust as necessary */
+                } else {
+                    chatbox.style.display = 'none';
+                    chatbox.style.bottom = '80px'; /* Adjust as necessary */
+                }
+            });
+
+
+            document.getElementById('chatWithSeller').addEventListener('click', function () {
+                var chatbox = document.querySelector('.chatbox');
+                chatbox.style.display = 'block';
+            });
+        </script>
+
+</body>
+
+</html>
