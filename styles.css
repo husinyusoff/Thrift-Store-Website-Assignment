@@ -2015,7 +2015,7 @@ justify-content: center; / Vertically center the content */
 /*  will zoom out the entire page to 80% whenever the screen is  */
 /*  larger than 1920×1080.                                        */
 /* ============================================================= */
-@media screen and (min-width: 1921px) and (min-height: 1081px) {
+@media screen and (min-width: 1280px){
   html {
     /* Chrome, Edge, Firefox, Opera support */
     zoom: 0.8;
